@@ -28,6 +28,9 @@ header {
     box-sizing: border-box;
     vertical-align: top;
 }
+.hmmx-Button:focus {
+    outline: 3px solid #ffbf47
+}
 
 .disabled{
 	zoom:1;
