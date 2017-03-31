@@ -41,9 +41,9 @@
     opacity: .5;
 }
 
-.FormField.is-mandatory .FormField-title:after {
+.FormField.is-optional .FormField-title:after {
     margin-left: .25em;
-    content: "*";
+    content: "(optional)";
     color: var(--red);
 }
 

@@ -10,6 +10,7 @@
             },
             "bindings": {
                 "classList.has('is-mandatory')": {"<-": "!!@owner.isMandatory"},
+                "classList.has('is-optional')": {"<-": "!@owner.isMandatory"},
                 "classList.has('help-is-shown')": {"<-": "@owner.helpShown"},
                 "classList.has('has-error')": {"<-": "@owner.hasError"},
                 "classList.has('is-validated')": {"<-": "@owner.isValidated"},
