@@ -9,12 +9,34 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+
+        "formField": {
+            "prototype": "ui/form-field.reel",
+            "properties": {
+                "element": {"#": "formField"},
+                "label": "Form Field Label",
+                "documentationReference": "documentationReference",
+                "disabled": false,
+                "errorMessage": "Error Message!",
+                "hasError": true,
+                "isMandatory": true,
+                "isLoading": false
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="Main">
+        <h1>HMMX Palette</h1>
+
+        <section>
+            <h4>Form Field (generalize this into Montage)</h4>
+            <div data-montage-id="formField">
+                <input type="text" placeholder="Form Field Control">
+            </div>
+        </section>
     </div>
 </body>
 </html>
