@@ -11,7 +11,6 @@
 
 .FormField > div:first-child {
     min-height: 2rem;
-    display: flex;
     flex: 1;
 }
 
@@ -32,7 +31,6 @@
     display: flex;
     height: auto;
     line-height: 1.25em;
-    width: var(--fieldtitleWidth);
     margin-right: 1.5rem;
     transition: opacity .25s;
 }
@@ -45,6 +43,10 @@
     margin-left: .25em;
     content: "(optional)";
     color: var(--red);
+}
+
+.FormField-hintText {
+    color: #6F777B;
 }
 
 /* Control */
