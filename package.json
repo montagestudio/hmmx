@@ -1,0 +1,16 @@
+{
+  "name": "hmmx",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/montagestudio/hmmx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/montagestudio/hmmx/issues"
+  },
+  "homepage": "https://github.com/montagestudio/hmmx#readme",
+  "dependencies": {
+    "montage": "git+https://github.com/montagejs/montage.git"
+  }
+}
