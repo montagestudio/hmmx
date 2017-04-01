@@ -11,3 +11,86 @@ html {
 body {
     margin: 15px;
 }
+
+
+@media (min-width: 641px) {
+	.example {
+	    padding-top: 45px;
+	    padding-right: 30px;
+	    padding-bottom: 30px;
+	    padding-left: 30px;
+	}
+	.example:before {
+	    font-size: 14px;
+	    line-height: 1.4285714286;
+	}
+}
+
+.bold-small {
+    font-weight: 700;
+}
+
+.button{
+	background-color: #00823b;
+	display: block;
+    padding: .526315em .789473em .263157em;
+    border: none;
+    border-radius: 0;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    -webkit-appearance: none;
+    box-shadow: 0 2px 0 #003618;
+    font-size: 1em;
+    line-height: 1.25;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    color: #fff;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.button:focus {
+    outline: 3px solid #ffbf47
+}
+
+.disabled{
+	zoom:1;
+	opacity:0.5;
+	pointer-events:none;
+}
+
+.example {
+	position: relative;
+    overflow: hidden;
+    border: 1px solid #bfc1c3;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.example:before {
+    content: "EXAMPLE";
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.2105263158em 0.7894736842em 0.2105263158em 0.7894736842em;
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 12px;
+    line-height: 1.25;
+    background: #bfc1c3;
+    color: white;
+}
+
+.example img {
+	padding: 0 15px;
+    max-width: calc(50% - 30px);
+    float: left;
+}
+
+
+

@@ -1,11 +1,16 @@
 .Main {
-    padding: 12px;
+    /*padding: 12px;*/
+    padding-bottom: 90px;
+    max-width:960px;
+    margin:0 auto;
 }
 
 section {
     border-top: 1px solid black;
+    
 }
 
 section:last-child {
     border-bottom: 1px solid black;
 }
+
