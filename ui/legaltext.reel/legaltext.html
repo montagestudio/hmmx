@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Main</title>
+
+    <link rel="stylesheet" type="text/css" href="legaltext.css">
+
+    <script type="text/montage-serialization">
+        {
+            "owner": {
+                "properties": {
+                    "element": {"#": "owner"}
+                }
+            },
+            "icon": {
+                "prototype":"ui/hmmx-image.reel",
+                "properties": {
+                    "element": {"#": "icon"}
+                },
+                "bindings": {
+                    "src": {"<-": "@owner.src"}
+                }
+            },
+            "text": {
+                "prototype":"montage/ui/text.reel",
+                "properties": {
+                    "element": {"#": "iconlabel"}
+                },
+                "bindings": {
+                    "value": {"<-": "@owner.text"}
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div data-montage-id="owner" data-montage-skin="light" class="Legaltext example">
+        <img data-montage-id="icon" class="Legaltext-icon"/><div data-montage-id="iconlabel" class="Legaltext-iconlabel bold-small"></div>
+    </div>
+</body>
+</html>
