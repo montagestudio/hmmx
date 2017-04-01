@@ -26,6 +26,24 @@
             }
         },
 
+        "fullName": {
+            "prototype": "ui/text-field.reel",
+            "properties": {
+                "element": {"#": "fullName"},
+                "label": "Full name",
+                "isMandatory": true
+            }
+        },
+        "nationalInsuranceNumber": {
+            "prototype": "ui/text-field.reel",
+            "properties": {
+                "element": {"#": "nationalInsuranceNumber"},
+                "label": "National Insurance Number",
+                "hintText": "It's on your National Insurance Card, benefit letter, payslip or P60. For example, `QQ 12 34 56 C`.",
+                "isMandatory": true
+            }
+        },
+
         "legaltext": {
             "prototype": "ui/legaltext.reel",
             "properties": {
@@ -80,6 +98,12 @@
             <div data-montage-id="formField">
                 <input type="text" placeholder="This Control is not part of the Form Field componnet">
             </div>
+
+            <h4>Regular text field</h4>
+            <div data-montage-id="fullName" class="textField"></div>
+
+            <h4>Text field with hint text</h4>
+            <div data-montage-id="nationalInsuranceNumber" class="textField"></div> 
         </section>
         <section>
             <h2>Icons and Images</h2>
