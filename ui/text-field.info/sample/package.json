@@ -1,0 +1,12 @@
+{
+    "name": "text-field-sample",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "montage": "*"
+    },
+    "mappings": {
+        "montage": "../../../../node_modules/montage/",
+        "hmmx": "../../../../../"
+    }
+}

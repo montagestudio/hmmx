@@ -4,7 +4,7 @@
 
 .FormField {
     position: relative;
-    margin-bottom: 1em;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
 }
@@ -18,9 +18,8 @@
 
 .FormField + .FormField { margin-top: 0; }
 
-.FormField > * {
-    font-family: "Lato";
-    font-size: 1em;
+.FormField-label {
+    padding-bottom: 2px;
 }
 
 /* Title */
@@ -33,6 +32,15 @@
     line-height: 1.25em;
     margin-right: 1.5rem;
     transition: opacity .25s;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 16px;
+}
+
+@media (min-width: 641px) {
+    .FormField-title {
+        font-size: 19px;
+    }
 }
 
 .FormField.is-disabled .FormField-title {
@@ -42,11 +50,22 @@
 .FormField.is-optional .FormField-title:after {
     margin-left: .25em;
     content: "(optional)";
-    color: var(--red);
 }
 
 .FormField-hintText {
     color: #6F777B;
+    margin-top: 0;
+    padding-bottom: 0;
+    text-transform: none;
+    font-weight: normal;
+    line-height: 1.25;
+}
+
+@media (min-width: 641px) {
+    .FormField-hintText {
+        font-size: 19px;
+        line-height: 1.3157894737;
+    }
 }
 
 /* Control */
@@ -60,6 +79,16 @@
     display: flex;
     flex-wrap: wrap;
     min-height: 2rem;
+    width: 100%;
+    font-size: 16px;
+}
+
+@media (min-width: 641px) {
+    .FormField-control {
+        width: 50%;
+        font-size: 19px;
+        line-height: 1.3157894737;
+    }
 }
 
 .FormField-control > *:first-child {
