@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Main</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <script type="text/montage-serialization">
+        {
+            "owner": {
+                "properties": {
+                    "element": {"#": "main"}
+                }
+            },
+
+            "inline": {
+                "prototype": "hmmx/ui/radio-button-group.reel",
+                "properties": {
+                    "element": {"#": "inline"},
+                    "label": "Do you already have a personal user account?",
+                    "isMandatory": true,
+                    "inline": true
+                }
+            },
+
+            "inlineYes": {
+                "prototype": "hmmx/ui/radio-button.reel",
+                "properties": {
+                    "element": {"#": "inlineYes"},
+                    "label": "Yes",
+                    "value": "Yes",
+                    "radioButtonGroup": {"@": "inline"}
+                }
+            },
+
+            "inlineNo": {
+                "prototype": "hmmx/ui/radio-button.reel",
+                "properties": {
+                    "element": {"#": "inlineNo"},
+                    "label": "No",
+                    "value": "No",
+                    "radioButtonGroup": {"@": "inline"}
+                }
+            },
+
+            "stacked": {
+                "prototype": "hmmx/ui/radio-button-group.reel",
+                "properties": {
+                    "element": {"#": "stacked"},
+                    "label": "Where do you live?",
+                    "isMandatory": true
+                }
+            },
+
+            "stackedA": {
+                "prototype": "hmmx/ui/radio-button.reel",
+                "properties": {
+                    "element": {"#": "stackedA"},
+                    "label": "Northern Ireland",
+                    "value": "northern_ireland",
+                    "radioButtonGroup": {"@": "stacked"}
+                }
+            },
+
+            "stackedB": {
+                "prototype": "hmmx/ui/radio-button.reel",
+                "properties": {
+                    "element": {"#": "stackedB"},
+                    "label": "Isle of Man or the Channel Islands",
+                    "value": "isle_of_man_channel_islands",
+                    "radioButtonGroup": {"@": "stacked"}
+                }
+            },
+
+            "stackedC": {
+                "prototype": "hmmx/ui/radio-button.reel",
+                "properties": {
+                    "element": {"#": "stackedC"},
+                    "label": "I am a British Citizen living abroad",
+                    "value": "citizen_abroad",
+                    "radioButtonGroup": {"@": "stacked"}
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <h1>Radio Button Group Sample</h1>
+        <div data-montage-id="inline">
+            <input type="radio" data-montage-id="inlineYes"></input>
+            <input type="radio" data-montage-id="inlineNo"></input>
+        </div>
+        <div data-montage-id="stacked">
+            <input type="radio" data-montage-id="stackedA"></input>
+            <input type="radio" data-montage-id="stackedB"></input>
+            or
+            <input type="radio" data-montage-id="stackedC"></input>
+        </div>
+    </div>
+</body>
+</html>
