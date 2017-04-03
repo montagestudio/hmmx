@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Main</title>
+
+    <link rel="stylesheet" type="text/css" href="form-group.css">
+
+    <script type="text/montage-serialization">
+        {
+            "owner": {
+                "properties": {
+                    "element": {"#": "owner"}
+                }
+            },
+
+            "message": {
+                "prototype":"montage/ui/text.reel",
+                "properties": {
+                    "element": {"#": "message"}
+                },
+                "bindings": {
+                    "value": {"<-": "@owner.message"}
+                }
+            },
+
+            "repetition": {
+                "prototype": "montage/ui/repetition.reel",
+                "properties": {
+                    "element": {"#": "repetition"}
+                },
+                "bindings": {
+                    "content": {"<-": "@owner.choices"}
+                }
+            },
+            
+            "radioGroup": {
+                "prototype": "ui/radio-button-group.reel",
+                "properties": {
+                    "element": {"#": "radioGroup"},
+                    "isMandatory": true,
+                    "hasError": true
+                },
+                "bindings": {
+                    "errorMessage": {"<-": "@owner.errorMessage"}
+                }
+            },
+            "radio": {
+                "prototype":"ui/radio-button.reel",
+                "properties": {
+                    "element": {"#": "radio"},
+                    "value": "yes",
+                    "label": "Yes, this is the label",
+                    "radioButtonGroup": {"@": "radioGroup"}
+                },
+                "bindings": {
+                    "value": {"<-": "@repetition:iteration.object.value"},
+                    "label": {"<-": "@repetition:iteration.object.label"}
+                }
+            }
+           
+        }
+    </script>
+</head>
+<body>
+    <div data-montage-id="owner" data-montage-skin="light" class="form-group form-group-error">
+        <fieldset>
+            <legend>
+                <span data-montage-id="message" class="form-label-bold"></span>
+            </legend>
+            <div data-montage-id="radioGroup">
+                <div data-montage-id="repetition">
+                    <input type="radio" data-montage-id="radio"></input>
+                </div>
+            </div>
+        </fieldset>
+</body>
+</html>

@@ -153,9 +153,41 @@
                 "label": "Disabled primary button",
                 "enabled": false
             }
+        },
+
+        "errorSummary": {
+            "prototype": "ui/error-summary.reel",
+            "properties": {
+                "element": {"#": "errorSummary"},
+                "heading": "Message to alert the user to a problem goes here",
+                "text": "Optional description of the errors and how to correct them",
+                "textContent":"Descriptive link to the question with an error",
+                "link": "https://govuk-elements.herokuapp.com/errors/#example-personal-details"
+            }
+        },
+
+        "errorFormGroup": {
+            "prototype": "ui/form-group.reel",
+            "properties": {
+                "element": {"#": "errorFormGroup"},
+                "message": "Are your personal details correct and up-to-date?",
+                "errorMessage": "Error message about personal details goes here",
+                "choices": [
+                    {"value":"yes", "label": "Yes, my personal details are correct"},
+                    {"value":"no", "label": "No, some details are wrong or have changed"}
+                ]
+            }
+        },
+        "continueButton": {
+            "prototype": "ui/hmmx-button.reel",
+            "properties": {
+                "element": {"#": "continueButton"},
+                "label": "Continue"
+            }
         }
     }
     </script>
+                
 </head>
 <body>
     <div data-montage-id="owner" class="Main">
@@ -202,11 +234,18 @@
                 <input data-montage-id="enabledButton" class="button" type="submit" value="Save and continue">
             </div>
             <div class="example">
-                <button data-montage-id="disabledButton" class="button disabled"></button>
+                <button data-montage-id="disabledButton" class="disabled"></button>
             </div>
         </section>
         <section>
             <h2>Errors and Validation</h2>
+            <div class="example">
+                <div data-montage-id="errorSummary"></div>
+                <h1 class="heading-large">Check your personal details</h1>
+                <p>Look at your name, signature and other details.</p>
+                <div data-montage-id="errorFormGroup" class="errorFormGroup"></div>
+                <button data-montage-id="continueButton"></div>
+            </div>
         </section>
     </div>
 </body>
