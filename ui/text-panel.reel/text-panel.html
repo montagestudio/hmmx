@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="text-panel.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "owner"}
+            },
+            "bindings": {
+                "classList.has('hidden')": {"<-": "@owner.isHidden"}
+            }
+        },
+
+        "label": {
+            "prototype": "montage/ui/label.reel",
+            "properties": {
+                "element": {"#": "label"}
+            },
+            "bindings": {
+                "value": {"<->": "@owner.label"}
+            }
+        },
+
+        "textField": {
+            "prototype": "ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField"},
+                "isMandatory": true
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="owner" class="TextPanel">
+        <label data-montage-id="label" class="TextPanel-label"></label>
+        <div data-montage-id="textField" class="TextPanel-textField"></div>
+    </div>
+</body>
+</html>

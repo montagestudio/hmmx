@@ -113,6 +113,104 @@
             }
         },
 
+        "wasteCheckbox1": {
+            "prototype": "ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "waste-type-1"},
+                "label": "Waste from animal carcasses",
+                "value": "waste-animal"
+            }
+        },
+
+        "wasteCheckbox2": {
+            "prototype": "ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "waste-type-2"},
+                "label": "Waste from mines or quarries",
+                "value": "waste-mines"
+            }
+        },
+
+        "wasteCheckbox3": {
+            "prototype": "ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "waste-type-3"},
+                "label": "Farm or agricultural waste",
+                "value": "waste-farm-agricultural"
+            }
+        },
+        
+        "radioContactGroup": {
+            "prototype": "ui/radio-button-group.reel",
+            "properties": {
+                "element": {"#": "radioContactGroup"},
+                "isMandatory": true
+            }
+        },
+
+        "contactEmail": {
+            "prototype": "ui/radio-button.reel",
+            "properties": {
+                "element": {"#": "contactEmail"},
+                "label": "Email",
+                "value": "contact-by-email",
+                "radioButtonGroup": {"@": "radioContactGroup"}
+            }
+        },
+
+        "emailPanel": {
+            "prototype": "ui/text-panel.reel",
+            "properties": {
+                "element": {"#": "emailPanel"},
+                "label": "Email Address"
+            },
+            "bindings": {
+                "isHidden": {"<-": "!@contactEmail.checked"}
+            }
+        },
+
+        "contactPhone": {
+            "prototype": "ui/radio-button.reel",
+            "properties": {
+                "element": {"#": "contactPhone"},
+                "label": "Phone",
+                "value": "contact-by-phone",
+                "radioButtonGroup": {"@": "radioContactGroup"}
+            }
+        },
+
+        "phonePanel": {
+            "prototype": "ui/text-panel.reel",
+            "properties": {
+                "element": {"#": "phonePanel"},
+                "label": "Phone Number"
+            },
+            "bindings": {
+                "isHidden": {"<-": "!@contactPhone.checked"}
+            }
+        },
+
+        "contactText": {
+            "prototype": "ui/radio-button.reel",
+            "properties": {
+                "element": {"#": "contactText"},
+                "label": "Text message",
+                "value": "contact-by-text",
+                "radioButtonGroup": {"@": "radioContactGroup"}
+            }
+        },
+
+        "textPanel": {
+            "prototype": "ui/text-panel.reel",
+            "properties": {
+                "element": {"#": "textPanel"},
+                "label": "Mobile Phone Number"
+            },
+            "bindings": {
+                "isHidden": {"<-": "!@contactText.checked"}
+            }
+        },  
+
         "legaltext": {
             "prototype": "ui/legaltext.reel",
             "properties": {
@@ -187,14 +285,14 @@
         }
     }
     </script>
-                
+            
 </head>
 <body>
     <div data-montage-id="owner" class="Main">
-        <h1>HMMX Palette</h1>
+        <h1 class="heading-large">HMMX Palette</h1>
 
         <section>
-            <h2>Form Elements</h2>
+            <h2 class="heading-medium">Form Elements</h2>
             <h4>Form Field (generalize this into Montage)</h4>
             <div data-montage-id="formField" class="example">
                 <input type="text" placeholder="This Control is not part of the Form Field componnet">
@@ -215,9 +313,26 @@
                 or
                 <input type="radio" data-montage-id="stackedC"></input>
             </div>
+            <div class="example">
+                <h3 class="heading-medium">Which types of waste do you transport regularly?</h3>
+                <p>Select all that apply</p>
+                <div data-montage-id="waste-type-1"></div>
+                <div data-montage-id="waste-type-2"></div>
+                <div data-montage-id="waste-type-3"></div>
+            </div>
+            <h4>Conditionally revealing content</h4>
+            <div data-montage-id="radioContactGroup" class="example">
+                <h1 class="heading-medium">How do you want to be contacted?</h1>
+                <input type="radio" data-montage-id="contactEmail"></input>
+                <div data-montage-id="emailPanel"></div>
+                <input type="radio" data-montage-id="contactPhone"></input>
+                <div data-montage-id="phonePanel"></div>
+                <input type="radio" data-montage-id="contactText"></input>
+                <div data-montage-id="textPanel"></div>
+            </div>
         </section>
         <section>
-            <h2>Icons and Images</h2>
+            <h2 class="heading-medium">Icons and Images</h2>
             <h4>Legal Text</h4>
             <div class="example">
                 <div data-montage-id="legaltext"></div>
@@ -229,7 +344,7 @@
             </div>
         </section>
         <section>
-            <h2>Buttons</h2>
+            <h2 class="heading-medium">Buttons</h2>
             <div class="example">
                 <input data-montage-id="enabledButton" class="button" type="submit" value="Save and continue">
             </div>
@@ -238,7 +353,7 @@
             </div>
         </section>
         <section>
-            <h2>Errors and Validation</h2>
+            <h2 class="heading-medium">Errors and Validation</h2>
             <div class="example">
                 <div data-montage-id="errorSummary"></div>
                 <h1 class="heading-large">Check your personal details</h1>

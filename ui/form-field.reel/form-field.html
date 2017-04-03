@@ -62,7 +62,8 @@
                 "element": {"#": "error"}
             },
             "bindings": {
-                "value": {"<-": "@owner.errorMessage"}
+                "value": {"<-": "@owner.errorMessage"},
+                "classList.has('hidden')": {"<-": "!@owner.errorMessage"}
             }
         },
         "closeHelpButton": {

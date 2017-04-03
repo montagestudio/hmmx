@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="checkbox.css">
+    
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "owner"}
+            },
+            "bindings": {
+                "classList.has('Checkbox--checked')": {"<-": "@box.classList.has('montage--checked')"},
+                "checked": {"<->": "@box.checked"}
+            }
+        },
+
+        "box": {
+            "prototype": "montage/ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "box"}
+            },
+            "bindings": {
+                "value": {"<-": "@owner.value"}
+            }
+        },
+
+        "label": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "label"}
+            },
+            "bindings": {
+                "value": {"<-": "@owner.label"}
+            }
+        }
+    }
+    </script>
+    
+</head>
+<body>
+    
+    <div data-montage-id="owner" class="Checkbox multiple-choice">
+        <input type="checkbox" data-montage-id="box" class="Checkbox-box"/>
+        <label data-montage-id="label" class="Checkbox-label"></label>
+    </div>
+</body>
+</html>

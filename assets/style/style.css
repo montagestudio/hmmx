@@ -28,6 +28,13 @@ legend {
     display: table;
 }
 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, small, strike, strong, sub, sup, tt, var, b, u, i, center, input, textarea, table, caption, tbody, tfoot, thead, tr, th, td {
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    font-weight: normal;
+}
+
 .bold-small {
     font-weight: 700;
 }
@@ -112,6 +119,42 @@ legend {
     margin-bottom: 0.5em;
 }
 
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.multiple-choice {
+    display: block;
+    float: none;
+    clear: left;
+    position: relative;
+    padding: 0 0 0 38px;
+    margin-bottom: 10px;
+}
+
+.multiple-choice input {
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    z-index: 1;
+    margin: 0;
+    zoom: 1;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.multiple-choice label {
+    cursor: pointer;
+    padding: 8px 10px 9px 12px;
+    display: block;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
 @media (min-width: 641px) {
     p {
         margin-top: 0.2631578947em;
@@ -142,5 +185,13 @@ legend {
         line-height: 1.25;
         margin-top: 1.875em;
         margin-bottom: 0.8333333333em;
+    }
+    .multiple-choice {
+        float: left;
+    }
+    .multiple-choice label {
+        float: left;
+        padding-top: 7px;
+        padding-bottom: 7px;
     }
 }

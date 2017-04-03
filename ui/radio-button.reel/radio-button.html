@@ -10,10 +10,11 @@
                 "element": {"#": "owner"}
             },
             "bindings": {
-                "classList.has('hmmx--checked')": 
+                "classList.has('RadioButton--checked')": 
                     {"<-": "@radio.classList.has('montage--checked')"},
-                "classList.has('hmmx-RadioButton--stacked')":
-                    {"<-": "!@owner.radioButtonGroup.inline"}
+                "classList.has('RadioButton--stacked')":
+                    {"<-": "!@owner.radioButtonGroup.inline"},
+                "checked": {"<->": "@radio.checked"}
             }
         },
 

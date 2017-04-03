@@ -1,0 +1,39 @@
+.TextPanel {
+    float: left;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: both;
+    border-left-style: solid;
+    border-color: #bfc1c3;
+    padding: 0.7894736842em;
+    margin-bottom: 0.7894736842em;
+    padding-bottom: 0;
+    border-left-width: 5px;
+}
+
+.TextPanel-label{
+    display: block;
+    color: #0b0c0c;
+    padding-bottom: 2px;
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-top:0;
+}
+
+.form-group.TextPanel:last-child {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+@media (min-width: 641px){
+    .TextPanel-label {
+        font-size: 19px;
+        line-height: 1.3157894737;
+    }
+}
+
