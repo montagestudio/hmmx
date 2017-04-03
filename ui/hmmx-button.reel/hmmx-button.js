@@ -1,9 +1,21 @@
+/**
+ * @module "montage/ui/hmmx-button.reel"
+ */
 var AbstractButton = require("montage/ui/base/abstract-button").AbstractButton;
+/**
+ * @class HmmxButton
+ * @extends external:AbstractButton
+ * @classdesc
+ */
+exports.HmmxButton = AbstractButton.specialize( /** @lends Button# */ {
 
-exports.HmmxButton = AbstractButton.specialize({
+    hasTemplate: {value: true},
 
-    hasTemplate: {
-        value: false
+    constructor : {
+        value: function HmmxButton() {
+            this.super();
+
+            this.classList.add("hmmx-button");
+        }
     }
-
 });

@@ -1,0 +1,110 @@
+.form-group{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.error-message {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #b10e1e;
+    display: block;
+    clear: both;
+    margin: 0;
+    padding: 2px 0;
+}
+
+.form-group-error {
+    margin-right: 15px;
+    border-left: 4px solid #b10e1e;
+    padding-left: 10px;
+}
+
+.form-label, .form-label-bold {
+    display: block;
+    color: #0b0c0c;
+    padding-bottom: 2px;
+}
+
+.form-label-bold {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.multiple-choice {
+    display: block;
+    float: none;
+    clear: left;
+    position: relative;
+    padding: 0 0 0 38px;
+    margin-bottom: 10px;
+}
+
+.multiple-choice input {
+    /*position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    z-index: 1;
+    margin: 0;
+    zoom: 1;
+    filter: alpha(opacity=0);
+    opacity: 0;*/
+    content: "";
+    border: 2px solid;
+    background: transparent;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.multiple-choice label {
+    cursor: pointer;
+    padding: 8px 10px 9px 12px;
+    display: block;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+
+@media (min-width: 641px) {
+    .form-group {
+        margin-bottom: 30px;
+    }
+    .error-message {
+        font-size: 19px;
+        line-height: 1.3157894737;
+    }
+    .form-group-error {
+        border-left: 5px solid #b10e1e;
+        padding-left: 15px;
+    }
+    .form-label-bold {
+        font-size: 19px;
+        line-height: 1.3157894737;
+    }
+    .multiple-choice {
+        float: left;
+    }
+    .multiple-choice label {
+        float: left;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+}

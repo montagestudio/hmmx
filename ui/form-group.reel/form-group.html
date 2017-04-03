@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Main</title>
+
+    <link rel="stylesheet" type="text/css" href="form-group.css">
+
+    <script type="text/montage-serialization">
+        {
+            "owner": {
+                "properties": {
+                    "element": {"#": "owner"}
+                }
+            },
+            "message": {
+                "prototype":"montage/ui/text.reel",
+                "properties": {
+                    "element": {"#": "message"}
+                },
+                "bindings": {
+                    "value": {"<-": "@owner.message"}
+                }
+            },
+            "error": {
+                "prototype":"montage/ui/text.reel",
+                "properties": {
+                    "element": {"#": "error"}
+                },
+                "bindings": {
+                    "value": {"<-": "@owner.error"}
+                }
+            },
+            "repetition": {
+                "prototype": "montage/ui/repetition.reel",
+                "properties": {
+                    "element": {"#": "repetition"}
+                },
+                "bindings": {
+                    "content": {"<-": "@owner.choices"}
+                }
+            },
+            "radioButtonController": {
+                "prototype": "montage/core/radio-button-controller",
+                "bindings": {
+                    "content": {"<-": "@owner.choices"},
+                    "value": {"<->": "@owner.choices"}
+                }
+            },
+            "radio": {
+                "prototype":"montage/ui/radio.reel",
+                "properties": {
+                    "element": {"#": "radio"},
+                    "radioButtonController": {"@": "radioButtonController"}
+                },
+                "bindings": {
+                    "value": {"<-": "@repetition:iteration.object.id"}
+                }
+            },
+            "radio-label": {
+                "prototype":"montage/ui/label.reel",
+                "properties": {
+                    "element": {"#": "radio-label"}
+                },
+                "bindings": {
+                    "value": {"<-": "@repetition:iteration.object.id"}
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div data-montage-id="owner" data-montage-skin="light" class="form-group form-group-error">
+        <fieldset>
+            <legend>
+                <span data-montage-id="message" class="form-label-bold"></span>
+                <span data-montage-id="error" class="error-message"></span>
+            </legend>
+            <div data-montage-id="repetition">
+                <div class="multiple-choice">
+                    <input type="radio" data-montage-id="radio" class="radio"/><label data-montage-id="radio-label"></label>
+                </div>
+            </div>
+        </fieldset>
+</body>
+</html>
+<!-- <div data-montage-id="label-text"></div> -->

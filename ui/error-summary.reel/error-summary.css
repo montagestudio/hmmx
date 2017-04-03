@@ -1,0 +1,41 @@
+.error-summary {
+	border: 4px solid #b10e1e;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px 10px;
+}
+
+.error-summary-heading.heading-medium{
+    margin-top:0;
+    margin-bottom:0.83333em;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.error-summary-text {
+    font-size:19px;
+}
+
+.error-summary a {
+    color: #b10e1e;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom:5px;
+}
+
+.error-summary a:visited {
+    color: #4c2c92;
+}
+
+.error-summary p {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 641px) {
+    .error-summary {
+        border: 5px solid #b10e1e;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px 15px 15px;
+    }
+}

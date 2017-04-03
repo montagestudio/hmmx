@@ -84,9 +84,34 @@
                 "label": "Disabled primary button",
                 "enabled": false
             }
+        },
+
+        "errorSummary": {
+            "prototype": "ui/error-summary.reel",
+            "properties": {
+                "element": {"#": "errorSummary"},
+                "heading": "Message to alert the user to a problem goes here",
+                "text": "Optional description of the errors and how to correct them",
+                "textContent":"Descriptive link to the question with an error",
+                "link": "https://govuk-elements.herokuapp.com/errors/#example-personal-details"
+            }
+        },
+
+        "errorFormGroup": {
+            "prototype": "ui/form-group.reel",
+            "properties": {
+                "element": {"#": "errorFormGroup"},
+                "message": "Check your personal details",
+                "error": "Look at your name, signature and othe details.",
+                "choices": [
+                    {"id":"yes", "text": "Yes, my personal details are correct"},
+                    {"id":"no", "text": "No, some details are wrong or have changed"}
+                ]
+            }
         }
     }
     </script>
+                
 </head>
 <body>
     <div data-montage-id="owner" class="Main">
@@ -120,14 +145,18 @@
         <section>
             <h2>Buttons</h2>
             <div class="example">
-                <button data-montage-id="enabledButton" class="button"></button>
+                <button data-montage-id="enabledButton"></button>
             </div>
             <div class="example">
-                <button data-montage-id="disabledButton" class="button disabled"></button>
+                <button data-montage-id="disabledButton" class="disabled"></button>
             </div>
         </section>
         <section>
             <h2>Errors and Validation</h2>
+            <div class="example">
+                <div data-montage-id="errorSummary"></div>
+                <div data-montage-id="errorFormGroup" class="errorFormGroup"></div>
+            </div>
         </section>
     </div>
 </body>

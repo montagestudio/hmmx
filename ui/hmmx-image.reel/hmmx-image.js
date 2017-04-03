@@ -1,6 +1,6 @@
-var AbstractImage = require("montage/ui/base/abstract-image").AbstractImage;
+var Image = require("montage/ui/image.reel").Image;
 
-exports.HmmxImage = AbstractImage.specialize({
+exports.HmmxImage = Image.specialize({
 
     hasTemplate: {
         value: false
