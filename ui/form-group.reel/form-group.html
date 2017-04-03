@@ -13,6 +13,7 @@
                     "element": {"#": "owner"}
                 }
             },
+
             "message": {
                 "prototype":"montage/ui/text.reel",
                 "properties": {
@@ -22,15 +23,7 @@
                     "value": {"<-": "@owner.message"}
                 }
             },
-            "error": {
-                "prototype":"montage/ui/text.reel",
-                "properties": {
-                    "element": {"#": "error"}
-                },
-                "bindings": {
-                    "value": {"<-": "@owner.error"}
-                }
-            },
+
             "repetition": {
                 "prototype": "montage/ui/repetition.reel",
                 "properties": {
@@ -40,32 +33,32 @@
                     "content": {"<-": "@owner.choices"}
                 }
             },
-            "radioButtonController": {
-                "prototype": "montage/core/radio-button-controller",
+            
+            "radioGroup": {
+                "prototype": "ui/radio-button-group.reel",
+                "properties": {
+                    "element": {"#": "radioGroup"},
+                    "isMandatory": true,
+                    "hasError": true
+                },
                 "bindings": {
-                    "content": {"<-": "@owner.choices"},
-                    "value": {"<->": "@owner.choices"}
+                    "errorMessage": {"<-": "@owner.errorMessage"}
                 }
             },
             "radio": {
-                "prototype":"montage/ui/radio.reel",
+                "prototype":"ui/radio-button.reel",
                 "properties": {
                     "element": {"#": "radio"},
-                    "radioButtonController": {"@": "radioButtonController"}
+                    "value": "yes",
+                    "label": "Yes, this is the label",
+                    "radioButtonGroup": {"@": "radioGroup"}
                 },
                 "bindings": {
-                    "value": {"<-": "@repetition:iteration.object.id"}
-                }
-            },
-            "radio-label": {
-                "prototype":"montage/ui/label.reel",
-                "properties": {
-                    "element": {"#": "radio-label"}
-                },
-                "bindings": {
-                    "value": {"<-": "@repetition:iteration.object.id"}
+                    "value": {"<-": "@repetition:iteration.object.value"},
+                    "label": {"<-": "@repetition:iteration.object.label"}
                 }
             }
+           
         }
     </script>
 </head>
@@ -74,14 +67,12 @@
         <fieldset>
             <legend>
                 <span data-montage-id="message" class="form-label-bold"></span>
-                <span data-montage-id="error" class="error-message"></span>
             </legend>
-            <div data-montage-id="repetition">
-                <div class="multiple-choice">
-                    <input type="radio" data-montage-id="radio" class="radio"/><label data-montage-id="radio-label"></label>
+            <div data-montage-id="radioGroup">
+                <div data-montage-id="repetition">
+                    <input type="radio" data-montage-id="radio"></input>
                 </div>
             </div>
         </fieldset>
 </body>
 </html>
-<!-- <div data-montage-id="label-text"></div> -->

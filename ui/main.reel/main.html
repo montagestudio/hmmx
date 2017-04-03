@@ -170,12 +170,19 @@
             "prototype": "ui/form-group.reel",
             "properties": {
                 "element": {"#": "errorFormGroup"},
-                "message": "Check your personal details",
-                "error": "Look at your name, signature and othe details.",
+                "message": "Are your personal details correct and up-to-date?",
+                "errorMessage": "Error message about personal details goes here",
                 "choices": [
-                    {"id":"yes", "text": "Yes, my personal details are correct"},
-                    {"id":"no", "text": "No, some details are wrong or have changed"}
+                    {"value":"yes", "label": "Yes, my personal details are correct"},
+                    {"value":"no", "label": "No, some details are wrong or have changed"}
                 ]
+            }
+        },
+        "continueButton": {
+            "prototype": "ui/hmmx-button.reel",
+            "properties": {
+                "element": {"#": "continueButton"},
+                "label": "Continue"
             }
         }
     }
@@ -234,7 +241,10 @@
             <h2>Errors and Validation</h2>
             <div class="example">
                 <div data-montage-id="errorSummary"></div>
+                <h1 class="heading-large">Check your personal details</h1>
+                <p>Look at your name, signature and other details.</p>
                 <div data-montage-id="errorFormGroup" class="errorFormGroup"></div>
+                <button data-montage-id="continueButton"></div>
             </div>
         </section>
     </div>

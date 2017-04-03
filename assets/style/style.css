@@ -38,6 +38,19 @@ legend {
 	pointer-events:none;
 }
 
+.error-message {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #b10e1e;
+    display: block;
+    clear: both;
+    margin: 0;
+    padding: 2px 0;
+}
+
 .example {
 	position: relative;
     overflow: hidden;
@@ -71,7 +84,15 @@ legend {
     float: left;
 }
 
-
+.heading-large {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 24px;
+    line-height: 1.0416666667;
+    margin-top: 1.0416666667em;
+    margin-bottom: 0.4166666667em;
+}
 
 .heading-medium {
     font-family: "nta", Arial, sans-serif;
@@ -88,6 +109,10 @@ legend {
         margin-top: 0.2631578947em;
         margin-bottom: 1.0526315789em;
     }
+    .error-message {
+        font-size: 19px;
+        line-height: 1.3157894737;
+    }
     .example {
         padding-top: 45px;
         padding-right: 30px;
@@ -97,6 +122,12 @@ legend {
     .example:before {
         font-size: 14px;
         line-height: 1.4285714286;
+    }
+    .heading-large {
+        margin-top: 1.25em;
+        margin-bottom: 0.5555555556em;
+        font-size: 36px;
+        line-height: 1.1111111111;
     }
     .heading-medium {
         font-size: 24px;
