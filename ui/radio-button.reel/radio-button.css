@@ -79,7 +79,7 @@
     opacity: 0;
 }
 
-.hmmx-RadioButton--checked .RadioButton-label::after {
+.hmmx--checked .RadioButton-label::after {
     zoom: 1;
     filter: alpha(opacity=100);
     opacity: 1;
