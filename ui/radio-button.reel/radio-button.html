@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="radio-button.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "owner"}
+            },
+            "bindings": {
+                "classList.has('hmmx-RadioButton--checked')": 
+                    {"<-": "@radio.classList.has('montage-RadioButton--checked')"},
+                "classList.has('hmmx-RadioButton--stacked')":
+                    {"<-": "!@owner.radioButtonGroup.inline"}
+            }
+        },
+
+        "radio": {
+            "prototype": "montage/ui/radio.reel",
+            "properties": {
+                "element": {"#": "radio"}
+            },
+            "bindings": {
+                "radioButtonController": {"<-": "@owner.radioButtonGroup.controller"},
+                "value": {"<-": "@owner.value"}
+            }
+        },
+
+        "label": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "label"}
+            },
+            "bindings": {
+                "value": {"<-": "@owner.label"}
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="owner" class="RadioButton">
+        <input type="radio" data-montage-id="radio" class="RadioButton-radio" />
+        <div data-montage-id="label" class="RadioButton-label"></div>
+    </div>
+</body>
+</html>

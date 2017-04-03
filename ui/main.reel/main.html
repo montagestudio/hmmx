@@ -44,6 +44,75 @@
             }
         },
 
+        "inline": {
+            "prototype": "ui/radio-button-group.reel",
+            "properties": {
+                "element": {"#": "inline"},
+                "label": "Do you already have a personal user account?",
+                "isMandatory": true,
+                "inline": true
+            }
+        },
+
+        "inlineYes": {
+            "prototype": "ui/radio-button.reel",
+            "properties": {
+                "element": {"#": "inlineYes"},
+                "label": "Yes",
+                "value": "Yes",
+                "radioButtonGroup": {"@": "inline"}
+            }
+        },
+
+        "inlineNo": {
+            "prototype": "ui/radio-button.reel",
+            "properties": {
+                "element": {"#": "inlineNo"},
+                "label": "No",
+                "value": "No",
+                "radioButtonGroup": {"@": "inline"}
+            }
+        },
+
+        "stacked": {
+            "prototype": "ui/radio-button-group.reel",
+            "properties": {
+                "element": {"#": "stacked"},
+                "label": "Where do you live?",
+                "isMandatory": true
+            }
+        },
+
+        "stackedA": {
+            "prototype": "ui/radio-button.reel",
+            "properties": {
+                "element": {"#": "stackedA"},
+                "label": "Northern Ireland",
+                "value": "northern_ireland",
+                "radioButtonGroup": {"@": "stacked"}
+            }
+        },
+
+        "stackedB": {
+            "prototype": "ui/radio-button.reel",
+            "properties": {
+                "element": {"#": "stackedB"},
+                "label": "Isle of Man or the Channel Islands",
+                "value": "isle_of_man_channel_islands",
+                "radioButtonGroup": {"@": "stacked"}
+            }
+        },
+
+        "stackedC": {
+            "prototype": "ui/radio-button.reel",
+            "properties": {
+                "element": {"#": "stackedC"},
+                "label": "I am a British Citizen living abroad",
+                "value": "citizen_abroad",
+                "radioButtonGroup": {"@": "stacked"}
+            }
+        },
+
         "legaltext": {
             "prototype": "ui/legaltext.reel",
             "properties": {
@@ -120,15 +189,25 @@
         <section>
             <h2>Form Elements</h2>
             <h4>Form Field (generalize this into Montage)</h4>
-            <div data-montage-id="formField">
+            <div data-montage-id="formField" class="example">
                 <input type="text" placeholder="This Control is not part of the Form Field componnet">
             </div>
 
-            <h4>Regular text field</h4>
-            <div data-montage-id="fullName" class="textField"></div>
+            <h4>Text field</h4>
+            <div data-montage-id="fullName" class="textField example"></div>
+            <div data-montage-id="nationalInsuranceNumber" class="textField example"></div> 
 
-            <h4>Text field with hint text</h4>
-            <div data-montage-id="nationalInsuranceNumber" class="textField"></div> 
+            <h4>Radio Buttons</h4>
+            <div data-montage-id="inline" class="example">
+                <input type="radio" data-montage-id="inlineYes"></input>
+                <input type="radio" data-montage-id="inlineNo"></input>
+            </div>
+            <div data-montage-id="stacked" class="example">
+                <input type="radio" data-montage-id="stackedA"></input>
+                <input type="radio" data-montage-id="stackedB"></input>
+                or
+                <input type="radio" data-montage-id="stackedC"></input>
+            </div>
         </section>
         <section>
             <h2>Icons and Images</h2>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="radio-button-group.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "owner"},
+                "controller": {"@": "radioButtonController"}
+            },
+            "bindings": {
+                "classList.has('hmmx-RadioButtonGroup--inline')": {"<-": "@owner.inline"}
+            }
+        },
+
+        "formField": {
+            "prototype": "ui/form-field.reel",
+            "properties": {
+                "element": {"#": "formField"}
+            },
+            "bindings": {
+                "label": {"<->": "@owner.label"},
+                "hintText": {"<->": "@owner.hintText"},
+                "disabled": {"<->": "@owner.disabled"},
+                "errorMessage": {"<->": "@owner.errorMessage"},
+                "hasError": {"<->": "@owner.hasError"},
+                "isMandatory": {"<->": "@owner.isMandatory"}
+            }
+        },
+
+        "radioButtonController": {
+            "prototype": "montage/core/radio-button-controller"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="owner" class="RadioButtonGroup">
+        <div data-montage-id="formField">
+            <div data-param="*"></div>
+        </div>
+    </div>
+</body>
+</html>
