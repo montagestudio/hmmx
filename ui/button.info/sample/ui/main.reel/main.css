@@ -1,0 +1,39 @@
+.Main {
+
+}
+
+header {
+    margin-top: 20px;
+    font-size: 42px;
+    font-weight: bold;
+    color: #333;
+}
+
+.hmmx-Button{
+	background-color: #00823b;
+	display: block;
+    padding: .526315em .789473em .263157em;
+    border: none;
+    border-radius: 0;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    -webkit-appearance: none;
+    box-shadow: 0 2px 0 #003618;
+    font-size: 1em;
+    line-height: 1.25;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    color: #fff;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.hmmx-Button:focus {
+    outline: 3px solid #ffbf47
+}
+
+.disabled{
+	zoom:1;
+	opacity:0.5;
+	pointer-events:none;
+}
