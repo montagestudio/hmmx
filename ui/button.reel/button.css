@@ -1,4 +1,4 @@
-.hmmx-button{
+.button{
     background-color: #00823b;
     display: block;
     padding: .526315em .789473em .263157em;
@@ -17,6 +17,6 @@
     box-sizing: border-box;
     vertical-align: top;
 }
-.hmmx-button:focus {
+.button:focus {
     outline: 3px solid #ffbf47
 }
