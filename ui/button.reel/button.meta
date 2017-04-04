@@ -1,0 +1,32 @@
+{
+    "blueprint_button_reference": {
+        "prototype": "montage/core/meta/blueprint-reference",
+        "properties": {
+            "valueReference": {
+                "blueprintName": "Button",
+                "prototypeName": "Button",
+                "blueprintModule": {
+                    "%": "montage/ui/button.reel/button.meta"
+                }
+            }
+        }
+    },
+    "root": {
+        "prototype": "montage/core/meta/module-blueprint",
+        "properties": {
+            "name": "button",
+            "customPrototype": false,
+            "parent": {
+                "@": "blueprint_button_reference"
+            },
+            "propertyValidationRules": {},
+            "blueprintModule": {
+                "%": "ui/button.reel/button.meta"
+            },
+            "exportName": "Button",
+            "module": {
+                "%": "ui/button.reel"
+            }
+        }
+    }
+}
