@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Main</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <script type="text/montage-serialization">
+        {
+            "owner": {
+                "properties": {
+                    "element": {"#": "main"}
+                }
+            },
+            "formField": {
+                "prototype": "hmmx/ui/form-field.reel",
+                "properties": {
+                    "element": {"#": "formField"},
+                    "label": "Choose a File",
+                    "hintText": "This is a hint.",
+                    "hasError": true,
+                    "errorMessage": "This is an error!"
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <header>Form Field Sample</header>
+        <div data-montage-id="formField">
+            <input type="file" />
+        </div>
+    </div>
+</body>
+</html>
