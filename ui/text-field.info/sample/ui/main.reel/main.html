@@ -13,21 +13,33 @@
                     "element": {"#": "main"}
                 }
             },
+            "fullNameField": {
+                "prototype": "hmmx/ui/form-field.reel",
+                "properties": {
+                    "element": {"#": "fullNameField"},
+                    "label": "Full name",
+                    "isMandatory": true
+                }
+            },
             "fullName": {
                 "prototype": "hmmx/ui/text-field.reel",
                 "properties": {
-                    "element": {"#": "fullName"},
-                    "label": "Full name",
+                    "element": {"#": "fullName"}
+                }
+            },
+            "nationalInsuranceNumberField": {
+                "prototype": "hmmx/ui/form-field.reel",
+                "properties": {
+                    "element": {"#": "nationalInsuranceNumberField"},
+                    "label": "National Insurance Number",
+                    "hintText": "It's on your National Insurance Card, benefit letter, payslip or P60. For example, `QQ 12 34 56 C`.",
                     "isMandatory": true
                 }
             },
             "nationalInsuranceNumber": {
                 "prototype": "hmmx/ui/text-field.reel",
                 "properties": {
-                    "element": {"#": "nationalInsuranceNumber"},
-                    "label": "National Insurance Number",
-                    "hintText": "It's on your National Insurance Card, benefit letter, payslip or P60. For example, `QQ 12 34 56 C`.",
-                    "isMandatory": true
+                    "element": {"#": "nationalInsuranceNumber"}
                 }
             }
         }
@@ -38,10 +50,14 @@
         <h1>Text Field Sample</h1>
 
         <label>Regular text field</label>
-        <div data-montage-id="fullName" class="textField"></div>
+        <div data-montage-id="fullNameField">
+            <input data-montage-id="fullName"></input>
+        </div>
 
         <label>Text field with hint text</label>
-        <div data-montage-id="nationalInsuranceNumber" class="textField"></div>
+        <div data-montage-id="nationalInsuranceNumberField">
+            <input data-montage-id="nationalInsuranceNumber"></input>
+        </div>
     </div>
 </body>
 </html>

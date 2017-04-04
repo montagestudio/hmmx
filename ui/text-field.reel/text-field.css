@@ -1,8 +1,4 @@
 .TextField {
-
-}
-
-.TextField-control {
     -webkit-appearance: none;
     border-radius: 0;
     font-size: 19px;
@@ -16,7 +12,7 @@
     width: 100%;
 }
 
-.TextField-control:focus {
+.TextField:focus {
     outline: 3px solid #ffbf47;
     outline-offset: 0;
 }

@@ -3,43 +3,7 @@
 <head>
     <title></title>
     <link rel="stylesheet" type="text/css" href="text-field.css">
-    <script type="text/montage-serialization">
-    {
-        "owner": {
-            "properties": {
-                "element": {"#": "owner"}
-            }
-        },
-
-        "formField": {
-            "prototype": "ui/form-field.reel",
-            "properties": {
-                "element": {"#": "formField"}
-            },
-            "bindings": {
-                "label": {"<->": "@owner.label"},
-                "hintText": {"<->": "@owner.hintText"},
-                "disabled": {"<->": "@owner.disabled"},
-                "errorMessage": {"<->": "@owner.errorMessage"},
-                "hasError": {"<->": "@owner.hasError"},
-                "isMandatory": {"<->": "@owner.isMandatory"}
-            }
-        },
-
-        "control": {
-            "prototype": "montage/ui/text-field.reel",
-            "properties": {
-                "element": {"#": "control"}
-            }
-        }
-    }
-    </script>
 </head>
 <body>
-    <div data-montage-id="owner" class="TextField">
-        <div data-montage-id="formField">
-            <input data-montage-id="control" class="TextField-control"></input>
-        </div>
-    </div>
 </body>
 </html>

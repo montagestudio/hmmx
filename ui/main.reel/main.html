@@ -26,21 +26,33 @@
             }
         },
 
+        "fullNameField": {
+            "prototype": "ui/form-field.reel",
+            "properties": {
+                "element": {"#": "fullNameField"},
+                "label": "Full name",
+                "isMandatory": true
+            }
+        },
         "fullName": {
             "prototype": "ui/text-field.reel",
             "properties": {
-                "element": {"#": "fullName"},
-                "label": "Full name",
+                "element": {"#": "fullName"}
+            }
+        },
+        "nationalInsuranceNumberField": {
+            "prototype": "ui/form-field.reel",
+            "properties": {
+                "element": {"#": "nationalInsuranceNumberField"},
+                "label": "National Insurance Number",
+                "hintText": "It's on your National Insurance Card, benefit letter, payslip or P60. For example, `QQ 12 34 56 C`.",
                 "isMandatory": true
             }
         },
         "nationalInsuranceNumber": {
             "prototype": "ui/text-field.reel",
             "properties": {
-                "element": {"#": "nationalInsuranceNumber"},
-                "label": "National Insurance Number",
-                "hintText": "It's on your National Insurance Card, benefit letter, payslip or P60. For example, `QQ 12 34 56 C`.",
-                "isMandatory": true
+                "element": {"#": "nationalInsuranceNumber"}
             }
         },
 
@@ -299,8 +311,12 @@
             </div>
 
             <h4>Text field</h4>
-            <div data-montage-id="fullName" class="textField example"></div>
-            <div data-montage-id="nationalInsuranceNumber" class="textField example"></div> 
+            <div data-montage-id="fullNameField" class="example">
+                <input data-montage-id="fullName"></input>
+            </div>
+            <div data-montage-id="nationalInsuranceNumberField" class="example">
+                <input data-montage-id="nationalInsuranceNumber"></input> 
+            </div>
 
             <h4>Radio Buttons</h4>
             <div data-montage-id="inline" class="example">
