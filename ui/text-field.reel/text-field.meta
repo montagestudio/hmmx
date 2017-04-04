@@ -1,0 +1,32 @@
+{
+    "blueprint_textfield_reference": {
+        "prototype": "montage/core/meta/blueprint-reference",
+        "properties": {
+            "valueReference": {
+                "blueprintName": "TextField",
+                "prototypeName": "TextField",
+                "blueprintModule": {
+                    "%": "montage/ui/text-field.reel/text-field.meta"
+                }
+            }
+        }
+    },
+    "root": {
+        "prototype": "montage/core/meta/module-blueprint",
+        "properties": {
+            "name": "text field",
+            "customPrototype": false,
+            "parent": {
+                "@": "blueprint_textfield_reference"
+            },
+            "propertyValidationRules": {},
+            "blueprintModule": {
+                "%": "ui/text-field.reel/text-field.meta"
+            },
+            "exportName": "TextField",
+            "module": {
+                "%": "ui/text-field.reel"
+            }
+        }
+    }
+}
