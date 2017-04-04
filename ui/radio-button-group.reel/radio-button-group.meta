@@ -1,0 +1,32 @@
+{
+    "blueprint_radioButtonController_reference": {
+        "prototype": "montage/core/meta/blueprint-reference",
+        "properties": {
+            "valueReference": {
+                "blueprintName": "RadioButtonController",
+                "prototypeName": "RadioButtonController",
+                "blueprintModule": {
+                    "%": "montage/core/radio-button-controller.meta"
+                }
+            }
+        }
+    },
+    "root": {
+        "prototype": "montage/core/meta/module-blueprint",
+        "properties": {
+            "name": "radio button group",
+            "customPrototype": false,
+            "parent": {
+                "@": "blueprint_radioButtonController_reference"
+            },
+            "propertyValidationRules": {},
+            "blueprintModule": {
+                "%": "ui/radio-button-group.reel/radio-button-group.meta"
+            },
+            "exportName": "RadioButtonGroup",
+            "module": {
+                "%": "ui/radio-button-group.reel"
+            }
+        }
+    }
+}
