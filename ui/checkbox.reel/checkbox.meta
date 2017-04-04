@@ -1,0 +1,56 @@
+{
+    "blueprint_checkbox_label": {
+        "prototype": "montage/core/meta/property-blueprint",
+        "properties": {
+            "name": "label",
+            "blueprint": {
+                "@": "root"
+            },
+            "cardinality": 1,
+            "mandatory": false,
+            "denyDelete": false,
+            "readOnly": false,
+            "valueType": "string",
+            "enumValues": [],
+            "helpKey": ""
+        }
+    }, 
+    "blueprint_checkbox_reference": {
+        "prototype": "montage/core/meta/blueprint-reference",
+        "properties": {
+            "valueReference": {
+                "blueprintName": "Checkbox",
+                "prototypeName": "Checkbox",
+                "blueprintModule": {
+                    "%": "montage/ui/checkbox.reel/checkbox.meta"
+                }
+            }
+        }
+    },
+    "root": {
+        "prototype": "montage/core/meta/module-blueprint",
+        "properties": {
+            "name": "checkbox",
+            "customPrototype": false,
+            "parent": {
+                "@": "blueprint_checkbox_reference"
+            },
+            "propertyBlueprints": [
+                {"@": "blueprint_checkbox_label"}
+            ],
+            "propertyBlueprintGroups": {
+                "Checkbox": [
+                    {"@": "blueprint_checkbox_label"}
+                ]
+            },
+            "propertyValidationRules": {},
+            "blueprintModule": {
+                "%": "ui/checkbox.reel/checkbox.meta"
+            },
+            "exportName": "Checkbox",
+            "module": {
+                "%": "ui/checkbox.reel"
+            }
+        }
+    }
+}
