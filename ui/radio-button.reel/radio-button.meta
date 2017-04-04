@@ -35,6 +35,14 @@
             "parent": {
                 "@": "blueprint_parent_reference"
             },
+            "propertyBlueprints": [
+                {"@": "blueprint_radioButton_label"}
+            ],
+            "propertyBlueprintGroups": {
+                "RadioButton": [
+                    {"@": "blueprint_radioButton_label"}
+                ]
+            },
             "propertyValidationRules": {},
             "blueprintModule": {
                 "%": "ui/radio-button.reel/radio-button.meta"
