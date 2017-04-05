@@ -1,8 +1,19 @@
-var AbstractImage = require("montage/ui/base/abstract-image").AbstractImage;
+/**
+ * @module "ui/image.reel"
+ */
+var Component = require("montage/ui/component").Component;
+/**
+ * @class Image
+ * @extends Component
+ */
+exports.Image = Component.specialize( /** @lends Image# */ {
 
-exports.Image = AbstractImage.specialize({
-    hasTemplate: {
-        value: false
-    }
+    
 
+    constructor : {
+        value: function Image() {
+            this.super();
+        }
+    },
+    hasTemplate: {value: true}
 });
