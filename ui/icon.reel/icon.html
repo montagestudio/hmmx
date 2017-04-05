@@ -4,13 +4,16 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Main</title>
 
-    <link rel="stylesheet" type="text/css" href="legaltext.css">
+    <link rel="stylesheet" type="text/css" href="icon.css">
 
     <script type="text/montage-serialization">
         {
             "owner": {
                 "properties": {
                     "element": {"#": "owner"}
+                }, 
+                "bindings": {
+                    "classList.has('Legaltext')": {"<-": "@owner.isLegal"}
                 }
             },
             "icon": {
@@ -19,7 +22,7 @@
                     "element": {"#": "icon"}
                 },
                 "bindings": {
-                    "src": {"<-": "@owner.src"}
+                    "src": {"<-": "@owner.isLegal ? '../../assets/images/icon-important.png' : @owner.src"}
                 }
             },
             "text": {
@@ -28,7 +31,8 @@
                     "element": {"#": "iconlabel"}
                 },
                 "bindings": {
-                    "value": {"<-": "@owner.text"}
+                    "value": {"<-": "@owner.label"},
+                    "classList.has('hidden')": {"<-": "!@owner.label"}
                 }
             }
 
@@ -36,8 +40,8 @@
     </script>
 </head>
 <body>
-    <div data-montage-id="owner" data-montage-skin="light" class="Legaltext">
-        <img data-montage-id="icon" class="Legaltext-icon"/><div data-montage-id="iconlabel" class="Legaltext-iconlabel bold-small"></div>
+    <div data-montage-id="owner" data-montage-skin="light" class="Icon">
+        <img data-montage-id="icon" class="Icon-image"/><div data-montage-id="iconlabel" class="Icon-label bold-small"></div>
     </div>
 </body>
 </html>

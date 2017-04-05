@@ -3,47 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="image.css">
-    
-    <script type="text/montage-serialization">
-    {
-        "owner": {
-            "properties": {
-                "element": {"#": "owner"}
-            },
-            "bindings": {
-                "label": {"<->": "@label.value"}
-            }
-        },
-
-        "image": {
-            "prototype": "montage/ui/image.reel",
-            "properties": {
-                "element": {"#": "image"}
-            },
-            "bindings": {
-                "src": {"<-": "@owner.src"}
-            }
-        },
-
-        "label": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "element": {"#": "label"}
-            },
-            "bindings": {
-                "value": {"<-": "@owner.label"},
-                "classList.has('hidden')": {"<-": "!@owner.label"}
-            }
-        }
-    }
-    </script>
-    
 </head>
 <body>
-    
-    <div data-montage-id="owner" class="Image">
-        <img data-montage-id="image" class="Image-picture"/>
-        <label data-montage-id="label" class="Image-label"></label>
-    </div>
 </body>
 </html>

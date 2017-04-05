@@ -1,19 +1,21 @@
 /**
- * @module "ui/image.reel"
+ * @module "montage/ui/image.reel"
  */
-var Component = require("montage/ui/component").Component;
+var Image = require("montage/ui/image.reel").Image;
 /**
  * @class Image
- * @extends Component
+ * @extends external:Image
+ * @classdesc
  */
-exports.Image = Component.specialize( /** @lends Image# */ {
+exports.Image = Image.specialize( /** @lends Image# */ {
 
-    
+    hasTemplate: {value: true},
 
     constructor : {
         value: function Image() {
             this.super();
+
+            this.classList.add("image");
         }
-    },
-    hasTemplate: {value: true}
+    }
 });

@@ -1,8 +1,13 @@
-@media (min-width: 641px) {
-	.Legaltext {
-		font-size: 19px;
-    	line-height: 1.3157894737;
-	}
+.Icon {
+
+}
+
+.Icon-image {
+
+}
+
+.Icon-label {
+ 
 }
 
 .Legaltext {
@@ -15,15 +20,27 @@
     max-width: 30em;
 }
 
-.Legaltext-icon {
+.Legaltext > .Icon-image{
 	width: 35px;
     height: 35px;
     display:inline-block;
 }
 
-.Legaltext-iconlabel {
+.Legaltext > .Icon-label {
 	display: inline-block;
     line-height: 35px;
     vertical-align: top;
     padding-left: 15px;
+}
+
+
+@media (min-width: 641px) {
+    .Icon {
+   
+    }
+
+    .Legaltext {
+        font-size: 19px;
+        line-height: 1.3157894737;
+    }
 }
