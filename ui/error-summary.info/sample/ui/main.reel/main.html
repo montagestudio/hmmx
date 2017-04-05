@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Main</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <script type="text/montage-serialization">
+        {
+            "owner": {
+                "properties": {
+                    "element": {"#": "main"}
+                }
+            },
+            "error-summary": {
+                "prototype": "hmmx/ui/error-summary.reel",
+                "properties": {
+                    "element": {"#": "error-summary"},,
+                    "heading": "Message to alert the user to a problem goes here",
+                    "text": "Optional description of the errors and how to correct them",
+                    "textContent":"Descriptive link to the question with an error",
+                    "link": "https://govuk-elements.herokuapp.com/errors/#example-personal-details"
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <header>Error Summary Sample</header>
+        <div data-montage-id="error-summary" class="error-summary"></div>
+    </div>
+</body>
+</html>

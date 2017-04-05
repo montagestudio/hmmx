@@ -1,0 +1,52 @@
+.Main {
+
+}
+
+header {
+    margin-top: 20px;
+    font-size: 42px;
+    font-weight: bold;
+    color: #333;
+}
+
+.Checkbox {
+    display: block;
+    float: none;
+    clear: left;
+    position: relative;
+    padding: 0 0 0 38px;
+    margin-bottom: 10px;
+}
+
+.Checkbox input {
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    z-index: 1;
+    margin: 0;
+    zoom: 1;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.Checkbox label {
+    cursor: pointer;
+    padding: 8px 10px 9px 12px;
+    display: block;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+@media (min-width: 641px) {
+    .Checkbox {
+        float: left;
+    }
+    .Checkbox label {
+        float: left;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+}

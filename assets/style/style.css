@@ -99,6 +99,35 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, small, strike, strong, sub, sup, tt,
     float: left;
 }
 
+.form-group{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-group-error {
+    margin-right: 15px;
+    border-left: 4px solid #b10e1e;
+    padding-left: 10px;
+}
+
+.form-label-bold {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.form-label, .form-label-bold {
+    display: block;
+    color: #0b0c0c;
+    padding-bottom: 2px;
+}
+
 .heading-large {
     font-family: "nta", Arial, sans-serif;
     font-weight: 700;
@@ -173,6 +202,17 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, small, strike, strong, sub, sup, tt,
     .example:before {
         font-size: 14px;
         line-height: 1.4285714286;
+    }
+     .form-group {
+        margin-bottom: 30px;
+    }
+    .form-group-error {
+        border-left: 5px solid #b10e1e;
+        padding-left: 15px;
+    }
+    .form-label-bold {
+        font-size: 19px;
+        line-height: 1.3157894737;
     }
     .heading-large {
         margin-top: 1.25em;

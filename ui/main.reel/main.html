@@ -276,18 +276,52 @@
             }
         },
 
-        "errorFormGroup": {
-            "prototype": "ui/form-group.reel",
+        "message": {
+            "prototype":"montage/ui/text.reel",
             "properties": {
-                "element": {"#": "errorFormGroup"},
-                "message": "Are your personal details correct and up-to-date?",
-                "errorMessage": "Error message about personal details goes here",
-                "choices": [
-                    {"value":"yes", "label": "Yes, my personal details are correct"},
-                    {"value":"no", "label": "No, some details are wrong or have changed"}
-                ]
+                "element": {"#": "message"},
+                "value": "Are your personal details correct and up-to-date?"
             }
         },
+
+        "errorMessage": {
+            "prototype":"montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "errorMessage"},
+                "value": "Error message about personal details goes here"
+            }
+        },
+
+        "errorRep": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "errorRep"}
+            },
+            "bindings": {
+                "content": {"<-": "@owner.choices"}
+            }
+        },
+
+        "errorRadioGroup": {
+            "prototype": "ui/radio-button-group.reel",
+            "properties": {
+                "element": {"#": "errorRadioGroup"}
+            }
+        },
+        "errorRadio": {
+            "prototype":"ui/radio-button.reel",
+            "properties": {
+                "element": {"#": "errorRadio"},
+                "value": "yes",
+                "label": "Yes, this is the label",
+                "radioButtonGroup": {"@": "errorRadioGroup"}
+            },
+            "bindings": {
+                "value": {"<-": "@errorRep:iteration.object.value"},
+                "label": {"<-": "@errorRep:iteration.object.label"}
+            }
+        },
+
         "continueButton": {
             "prototype": "ui/button.reel",
             "properties": {
@@ -374,7 +408,20 @@
                 <div data-montage-id="errorSummary"></div>
                 <h1 class="heading-large">Check your personal details</h1>
                 <p>Look at your name, signature and other details.</p>
-                <div data-montage-id="errorFormGroup" class="errorFormGroup"></div>
+                <!-- <div data-montage-id="errorFormGroup" class="errorFormGroup"></div> -->
+                <div class="form-group form-group-error">
+                    <fieldset>
+                        <legend>
+                            <span data-montage-id="message" class="form-label-bold"></span>
+                            <span data-montage-id="errorMessage" class="error-message"></span>
+                        </legend>
+                        <div data-montage-id="errorRadioGroup">
+                            <div data-montage-id="errorRep">
+                                <input type="radio" data-montage-id="errorRadio"></input>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
                 <input type="button" data-montage-id="continueButton"></input>
             </div>
         </section>
