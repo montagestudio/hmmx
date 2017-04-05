@@ -4,6 +4,12 @@
     <title></title>
     <script type="text/montage-serialization">
     {
+        "formField": {
+            "prototype": "hmmx/ui/form-field.reel",
+            "properties": {
+                "element": {"#": "formField"}
+            }
+        },
         "radioButtonGroup": {
             "prototype": "hmmx/ui/radio-button-group.reel",
             "properties": {
@@ -28,9 +34,11 @@
     </script>
 </head>
 <body>
-    <div data-montage-id="radioButtonGroup">
-        <input type="radio" data-montage-id="radioButton1" />
-        <input type="radio" data-montage-id="radioButton2" />
+    <div data-montage-id="formField">
+        <div data-montage-id="radioButtonGroup">
+            <input type="radio" data-montage-id="radioButton1" />
+            <input type="radio" data-montage-id="radioButton2" />
+        </div>
     </div>
 </body>
 </html>
