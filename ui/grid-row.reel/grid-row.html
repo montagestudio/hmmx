@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="grid-row.css">
+    
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "owner"}
+            },
+            "bindings": {
+               
+            }
+        },
+
+        "repetition": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "repetition"}
+            },
+            "bindings": {
+                "content": {"<-": "@owner.content"}
+            }
+        },
+
+        "grid-cell": {
+            "prototype": "ui/grid-row.reel"
+            "properties": {
+                "element": {"#": "grid-cell"}
+            },
+            "bindings": {
+                "content": {"<-": "@repetition:iteration.object"}
+            }
+        }
+    }
+    </script>
+    
+</head>
+<body>
+    
+    <div data-montage-id="owner" class="Grid-Row">
+        <div data-montage-id="repetition">
+            <div data-montage-id="grid-cell"></div>
+        </div>
+    </div>
+</body>
+</html>
