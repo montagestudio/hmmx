@@ -202,24 +202,24 @@
             }
         },
 
-        "contactText": {
+        "contactTextMessage": {
             "prototype": "ui/radio-button.reel",
             "properties": {
-                "element": {"#": "contactText"},
+                "element": {"#": "contactTextMessage"},
                 "label": "Text message",
                 "value": "contact-by-text",
                 "radioButtonGroup": {"@": "radioContactGroup"}
             }
         },
 
-        "textPanel": {
+        "textMessagePanel": {
             "prototype": "ui/text-panel.reel",
             "properties": {
-                "element": {"#": "textPanel"},
+                "element": {"#": "textMessagePanel"},
                 "label": "Mobile Phone Number"
             },
             "bindings": {
-                "isHidden": {"<-": "!@contactText.checked"}
+                "isHidden": {"<-": "!@contactTextMessage.checked"}
             }
         },  
 
@@ -377,8 +377,8 @@
                 <div data-montage-id="emailPanel"></div>
                 <input type="radio" data-montage-id="contactPhone"></input>
                 <div data-montage-id="phonePanel"></div>
-                <input type="radio" data-montage-id="contactText"></input>
-                <div data-montage-id="textPanel"></div>
+                <input type="radio" data-montage-id="contactTextMessage"></input>
+                <div data-montage-id="textMessagePanel"></div>
             </div>
         </section>
         <section>
