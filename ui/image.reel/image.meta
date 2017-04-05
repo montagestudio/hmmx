@@ -1,0 +1,32 @@
+{
+    "blueprint_parent_reference": {
+        "prototype": "montage/core/meta/blueprint-reference",
+        "properties": {
+            "valueReference": {
+                "blueprintName": "AbstractImage",
+                "prototypeName": "AbstractImage",
+                "blueprintModule": {
+                    "%": "montage/ui/base/abstract-image.meta"
+                }
+            }
+        }
+    },
+    "root": {
+        "prototype": "montage/core/meta/module-blueprint",
+        "properties": {
+            "name": "image",
+            "customPrototype": false,
+            "parent": {
+                "@": "blueprint_parent_reference"
+            },
+            "propertyValidationRules": {},
+            "blueprintModule": {
+                "%": "ui/image.reel/image.meta"
+            },
+            "exportName": "Image",
+            "module": {
+                "%": "ui/image.reel"
+            }
+        }
+    }
+}

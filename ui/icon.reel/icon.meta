@@ -1,0 +1,92 @@
+{
+    "blueprint_icon_src": {
+        "prototype": "montage/core/meta/property-blueprint",
+        "properties": {
+            "name": "src",
+            "blueprint": {
+                "@": "root"
+            },
+            "cardinality": 1,
+            "mandatory": false,
+            "denyDelete": false,
+            "readOnly": false,
+            "valueType": "string",
+            "enumValues": [],
+            "helpKey": ""
+        }
+    },
+    "blueprint_icon_label": {
+        "prototype": "montage/core/meta/property-blueprint",
+        "properties": {
+            "name": "label",
+            "blueprint": {
+                "@": "root"
+            },
+            "cardinality": 1,
+            "mandatory": false,
+            "denyDelete": false,
+            "readOnly": false,
+            "valueType": "string",
+            "enumValues": [],
+            "helpKey": ""
+        }
+    },
+    "blueprint_icon_isLegal": {
+        "prototype": "montage/core/meta/property-blueprint",
+        "properties": {
+            "name": "isLegal",
+            "blueprint": {
+                "@": "root"
+            },
+            "cardinality": 1,
+            "mandatory": false,
+            "denyDelete": false,
+            "readOnly": false,
+            "valueType": "boolean",
+            "enumValues": [],
+            "helpKey": ""
+        }
+    },
+    "blueprint_parent_reference": {
+        "prototype": "montage/core/meta/blueprint-reference",
+        "properties": {
+            "valueReference": {
+                "blueprintName": "Component",
+                "prototypeName": "Component",
+                "blueprintModule": {
+                    "%": "montage/ui/component.meta"
+                }
+            }
+        }
+    },
+    "root": {
+        "prototype": "montage/core/meta/module-blueprint",
+        "properties": {
+            "name": "icon",
+            "customPrototype": false,
+            "parent": {
+                "@": "blueprint_parent_reference"
+            },
+            "propertyBlueprints": [
+                {"@": "blueprint_icon_src"},
+                {"@": "blueprint_icon_label"},
+                {"@": "blueprint_icon_isLegal"}
+            ],
+            "propertyBlueprintGroups": {
+                "Icon": [
+                    {"@": "blueprint_icon_src"},
+                    {"@": "blueprint_icon_label"},
+                    {"@": "blueprint_icon_isLegal"}
+                ]
+            },
+            "propertyValidationRules": {},
+            "blueprintModule": {
+                "%": "ui/icon.reel/icon.meta"
+            },
+            "exportName": "Icon",
+            "module": {
+                "%": "ui/icon.reel"
+            }
+        }
+    }
+}
