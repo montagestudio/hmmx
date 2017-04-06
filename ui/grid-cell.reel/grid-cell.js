@@ -7,12 +7,4 @@ var Component = require("montage/ui/component").Component;
  * @extends Component
  */
 exports.GridCell = Component.specialize( /** @lends GridCell# */ {
-
-    hasTemplate: {value: true},
-
-    constructor : {
-        value: function GridCell() {
-            this.super();
-        }
-    }
 });

@@ -1,0 +1,16 @@
+.Main {
+
+}
+
+.content {
+    width: 100%;
+    height: 20px;
+}
+
+.content.even {
+    background-color: lightblue;
+}
+
+.content.odd {
+    background-color: darkblue;
+}

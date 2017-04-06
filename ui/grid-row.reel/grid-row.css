@@ -1,3 +1,4 @@
-.Grid-Row {
-    
+.GridRow {
+    width: 100%;
+    display: flex;
 }

@@ -9,29 +9,6 @@
         "owner": {
             "properties": {
                 "element": {"#": "owner"}
-            },
-            "bindings": {
-               
-            }
-        },
-
-        "repetition": {
-            "prototype": "montage/ui/repetition.reel",
-            "properties": {
-                "element": {"#": "repetition"}
-            },
-            "bindings": {
-                "content": {"<-": "@owner.content"}
-            }
-        },
-
-        "grid-row": {
-            "prototype": "ui/grid-row.reel"
-            "properties": {
-                "element": {"#": "grid-row"}
-            },
-            "bindings": {
-                "content": {"<-": "@repetition:iteration.object"}
             }
         }
     }
@@ -39,11 +16,8 @@
     
 </head>
 <body>
-    
     <div data-montage-id="owner" class="Grid">
-        <div data-montage-id="repetition">
-            <div data-montage-id="grid-row"></div>
-        </div>
+        <div data-param="*"></div>
     </div>
 </body>
 </html>
