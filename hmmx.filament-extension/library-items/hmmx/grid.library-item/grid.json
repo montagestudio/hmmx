@@ -1,0 +1,5 @@
+{
+    "name": "Grid",
+    "description": "Provides a configurable grid layout with rows and columns.",
+    "iconUrl": "grid.png"
+}

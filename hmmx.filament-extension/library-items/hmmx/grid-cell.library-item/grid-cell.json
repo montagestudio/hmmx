@@ -1,0 +1,5 @@
+{
+    "name": "GridCell",
+    "description": "A cell inside a grid layout with a configurable size.",
+    "iconUrl": "grid-cell.png"
+}

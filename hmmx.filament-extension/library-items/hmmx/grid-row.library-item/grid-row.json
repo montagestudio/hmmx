@@ -1,0 +1,5 @@
+{
+    "name": "GridRow",
+    "description": "A row inside a grid layout.",
+    "iconUrl": "grid-row.png"
+}

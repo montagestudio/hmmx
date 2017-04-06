@@ -1,0 +1,32 @@
+{
+    "blueprint_parent_reference": {
+        "prototype": "montage/core/meta/blueprint-reference",
+        "properties": {
+            "valueReference": {
+                "blueprintName": "Component",
+                "prototypeName": "Component",
+                "blueprintModule": {
+                    "%": "montage/ui/component.meta"
+                }
+            }
+        }
+    },
+    "root": {
+        "prototype": "montage/core/meta/module-blueprint",
+        "properties": {
+            "name": "GridCell",
+            "customPrototype": false,
+            "parent": {
+                "@": "blueprint_parent_reference"
+            },
+            "propertyValidationRules": {},
+            "blueprintModule": {
+                "%": "ui/grid-row.reel/grid-cell.meta"
+            },
+            "exportName": "GridCell",
+            "module": {
+                "%": "ui/grid-cell.reel"
+            }
+        }
+    }
+}
