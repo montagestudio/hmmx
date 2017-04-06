@@ -1,4 +1,21 @@
 {
+    "blueprint_gridCell_width": {
+        "prototype": "montage/core/meta/property-blueprint",
+        "properties": {
+            "name": "width",
+            "blueprint": {
+                "@": "root"
+            },
+            "cardinality": 1,
+            "mandatory": false,
+            "denyDelete": false,
+            "readOnly": false,
+            "valueType": "number",
+            "enumValues": [],
+            "helpKey": "",
+            "defaultValue": 1
+        }
+    },
     "blueprint_parent_reference": {
         "prototype": "montage/core/meta/blueprint-reference",
         "properties": {
@@ -18,6 +35,14 @@
             "customPrototype": false,
             "parent": {
                 "@": "blueprint_parent_reference"
+            },
+            "propertyBlueprints": [
+                {"@": "blueprint_gridCell_width"}
+            ],
+            "propertyBlueprintGroups": {
+                "GridCell": [
+                    {"@": "blueprint_gridCell_width"}
+                ]
             },
             "propertyValidationRules": {},
             "blueprintModule": {

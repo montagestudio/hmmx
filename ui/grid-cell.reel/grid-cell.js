@@ -7,4 +7,8 @@ var Component = require("montage/ui/component").Component;
  * @extends Component
  */
 exports.GridCell = Component.specialize( /** @lends GridCell# */ {
+
+    width: {
+        value: 1
+    }
 });
