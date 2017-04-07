@@ -8,7 +8,7 @@ var Component = require("montage/ui/component").Component;
  */
 exports.GridCell = Component.specialize( /** @lends GridCell# */ {
 
-    width: {
+    columnSpan: {
         value: 1
     }
 });

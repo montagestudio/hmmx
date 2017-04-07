@@ -1,0 +1,5 @@
+{
+    "name": "Text Panel",
+    "description": "Displays a text field with a label that is shown when an input is checked",
+    "iconUrl": "text-panel.png"
+}

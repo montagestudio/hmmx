@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Main</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <script type="text/montage-serialization">
+        {
+            "owner": {
+                "properties": {
+                    "element": {"#": "main"}
+                }
+            },
+
+            "radioContactGroup": {
+                "prototype": "hmmx/ui/radio-button-group.reel",
+                "properties": {
+                    "element": {"#": "radioContactGroup"},
+                    "isMandatory": true
+                }
+            },
+
+            "contactEmail": {
+                "prototype": "hmmx/ui/radio-button.reel",
+                "properties": {
+                    "element": {"#": "contactEmail"},
+                    "label": "Email",
+                    "value": "contact-by-email",
+                    "radioButtonGroup": {"@": "radioContactGroup"}
+                }
+            },
+
+            "emailPanel": {
+                "prototype": "hmmx/ui/text-panel.reel",
+                "properties": {
+                    "element": {"#": "emailPanel"},
+                    "label": "Email Address"
+                },
+                "bindings": {
+                    "isHidden": {"<-": "!@contactEmail.checked"}
+                }
+            }
+           
+        }
+    </script>
+</head>
+<body>
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <h1>Text Panel Sample</h1>
+        <div data-montage-id="radioContactGroup">
+            <input type="radio" data-montage-id="contactEmail"></input>
+            <div data-montage-id="emailPanel"></div>
+        </div>
+    </div>
+</body>
+</html>
