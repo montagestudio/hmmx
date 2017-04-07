@@ -28,9 +28,37 @@ section:last-child {
     border: 2px solid #0b0c0c;
 }
 
+.Legaltext {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    -webkit-font-smoothing: antialiased;
+    max-width: 30em;
+}
+
+.Legaltext > .Icon-image{
+    width: 35px;
+    height: 35px;
+    display:inline-block;
+}
+
+.Legaltext > .Icon-label {
+    display: inline-block;
+    line-height: 35px;
+    vertical-align: top;
+    padding-left: 15px;
+}
+
 @media (min-width: 641px) {
 	.contactPanel > .TextField {
 	    font-size: 19px;
 	    line-height: 1.3157894737;
 	}
+    
+    .Legaltext {
+        font-size: 19px;
+        line-height: 1.3157894737;
+    }
 }

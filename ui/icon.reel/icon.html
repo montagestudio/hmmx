@@ -11,9 +11,6 @@
             "owner": {
                 "properties": {
                     "element": {"#": "owner"}
-                }, 
-                "bindings": {
-                    "classList.has('Legaltext')": {"<-": "@owner.isLegal"}
                 }
             },
             "icon": {
@@ -22,7 +19,7 @@
                     "element": {"#": "icon"}
                 },
                 "bindings": {
-                    "src": {"<-": "@owner.isLegal ? '../../assets/images/icon-important.png' : @owner.src"}
+                    "src": {"<-": "@owner.src"}
                 }
             },
             "text": {
