@@ -1,8 +1,8 @@
 {
-    "blueprint_gridCell_width": {
+    "blueprint_gridCell_columnSpan": {
         "prototype": "montage/core/meta/property-blueprint",
         "properties": {
-            "name": "width",
+            "name": "columnSpan",
             "blueprint": {
                 "@": "root"
             },
@@ -11,7 +11,7 @@
             "denyDelete": false,
             "readOnly": false,
             "valueType": "number",
-            "enumValues": [],
+            "enumValues": [1, 2, 3, 4],
             "helpKey": "",
             "defaultValue": 1
         }
