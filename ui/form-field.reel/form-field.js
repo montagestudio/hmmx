@@ -9,6 +9,22 @@ var Component = require("montage/ui/component").Component;
  */
 var FormField = exports.FormField = Component.specialize(/** @lends FormField# */ {
 
+    label: {
+        value: undefined
+    },
+
+    hintText: {
+        value: undefined
+    },
+
+    helpMessage: {
+        value: undefined
+    },
+    
+    errorMessage: {
+        value: undefined
+    },
+
     helpShown: {
         value: false
     },
