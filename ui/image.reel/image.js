@@ -1,7 +1,7 @@
 /**
  * @module "montage/ui/image.reel"
  */
-var Image = require("montage/ui/image.reel").Image;
+var Image = require("montage/ui/base/abstract-image").AbstractImage;
 /**
  * @class Image
  * @extends external:Image
