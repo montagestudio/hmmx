@@ -37,11 +37,11 @@
                 "@": "blueprint_parent_reference"
             },
             "propertyBlueprints": [
-                {"@": "blueprint_gridCell_width"}
+                {"@": "blueprint_gridCell_columnSpan"}
             ],
             "propertyBlueprintGroups": {
                 "GridCell": [
-                    {"@": "blueprint_gridCell_width"}
+                    {"@": "blueprint_gridCell_columnSpan"}
                 ]
             },
             "propertyValidationRules": {},
