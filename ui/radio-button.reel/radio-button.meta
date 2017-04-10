@@ -28,7 +28,7 @@
             "mandatory": true,
             "denyDelete": false,
             "readOnly": false,
-            "valueType": "string"
+            "valueType": "object"
         }
     },
 
