@@ -15,6 +15,23 @@
             "helpKey": ""
         }
     },
+
+    "blueprint_radioButton_radioButtonGroup": {
+        "prototype": "montage/core/meta/property-blueprint",
+        "properties": {
+            "name": "radioButtonGroup",
+            "valueType": "object",
+            "blueprint": {
+                "@": "root"
+            },
+            "cardinality": 1,
+            "mandatory": true,
+            "denyDelete": false,
+            "readOnly": false,
+            "valueType": "string"
+        }
+    },
+
     "blueprint_parent_reference": {
         "prototype": "montage/core/meta/blueprint-reference",
         "properties": {
@@ -36,11 +53,13 @@
                 "@": "blueprint_parent_reference"
             },
             "propertyBlueprints": [
-                {"@": "blueprint_radioButton_label"}
+                {"@": "blueprint_radioButton_label"},
+                {"@": "blueprint_radioButton_radioButtonGroup"}
             ],
             "propertyBlueprintGroups": {
                 "RadioButton": [
-                    {"@": "blueprint_radioButton_label"}
+                    {"@": "blueprint_radioButton_label"},
+                    {"@": "blueprint_radioButton_radioButtonGroup"}
                 ]
             },
             "propertyValidationRules": {},

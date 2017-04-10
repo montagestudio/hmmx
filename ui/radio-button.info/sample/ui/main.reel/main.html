@@ -14,10 +14,21 @@
                 }
             },
 
-            "radioButton": {
-                "prototype": "hmmx/radio-button.reel",
+             "stacked": {
+                "prototype": "hmmx/ui/radio-button-group.reel",
                 "properties": {
-                    "element": {"#": "radioButton"}
+                    "element": {"#": "stacked"},
+                    "isMandatory": true
+                }
+            },
+
+            "radioButton": {
+                "prototype": "hmmx/ui/radio-button.reel",
+                "properties": {
+                    "element": {"#": "radioButton"},
+                    "label": "Radio Button Label",
+                    "value": "Radio Button Value",
+                    "radioButtonGroup": {"@": "stacked"}
                 }
             }
         }
@@ -26,7 +37,9 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <h1>Radio Button Sample</h1>
-        <div data-montage-id="radioButton"></div>
+        <div data-montage-id="stacked">
+            <input data-montage-id="radioButton"></input>
+        </div>
     </div>
 </body>
 </html>
