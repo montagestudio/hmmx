@@ -63,22 +63,6 @@
             "helpKey": ""
         }
     },
-    "blueprint_formfield_hasError": {
-        "prototype": "montage/core/meta/property-blueprint",
-        "properties": {
-            "name": "hasError",
-            "blueprint": {
-                "@": "root"
-            },
-            "cardinality": 1,
-            "mandatory": false,
-            "denyDelete": false,
-            "readOnly": false,
-            "valueType": "boolean",
-            "enumValues": [],
-            "helpKey": ""
-        }
-    },
     "blueprint_formfield_isMandatory": {
         "prototype": "montage/core/meta/property-blueprint",
         "properties": {
@@ -145,9 +129,6 @@
                     "@": "blueprint_formfield_errorMessage"
                 },
                 {
-                    "@": "blueprint_formfield_hasError"
-                },
-                {
                     "@": "blueprint_formfield_isMandatory"
                 },
                 {
@@ -167,9 +148,6 @@
                     },
                     {
                         "@": "blueprint_formfield_errorMessage"
-                    },
-                    {
-                        "@": "blueprint_formfield_hasError"
                     },
                     {
                         "@": "blueprint_formfield_isMandatory"

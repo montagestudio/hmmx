@@ -25,6 +25,12 @@ var FormField = exports.FormField = Component.specialize(/** @lends FormField# *
         value: undefined
     },
 
+    _hasError: {
+        get: function() {
+            return this.errorMessage && this.errorMessage.length
+        }
+    },
+
     helpShown: {
         value: false
     },
