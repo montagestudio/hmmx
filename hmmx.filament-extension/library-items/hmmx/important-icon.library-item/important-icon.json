@@ -1,0 +1,5 @@
+{
+    "name": "Important Icon",
+    "description": "Displays the Important icon, along with an optional label.",
+    "iconUrl": "important-icon.png"
+}
