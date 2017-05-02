@@ -34,7 +34,7 @@
         <color>ff3644db</color>
         <scale>1.1</scale>
         <Icon>
-          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>https://montagestudio.github.io/hmmx/assets/geo/DefaultUKGovPinHighlight.svg</href>
         </Icon>
         <hotSpot x="16" xunits="pixels" y="31" yunits="insetPixels"/>
       </IconStyle>
@@ -53,7 +53,7 @@
       </Pair>
     </StyleMap>
     <Folder>
-      <name>Untitled layer</name>
+      <name>Her Majesty's Prisons</name>
       <Placemark>
         <name>Acklington</name>
         <description><![CDATA[Morpeth<br>Morpeth, NE65 9XF Acklington<br>FF000]]></description>
