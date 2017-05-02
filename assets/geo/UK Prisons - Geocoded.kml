@@ -41,6 +41,18 @@
         <scale>0</scale>
       </LabelStyle>
     </Style>    
+    <Style id="icon-category-B">
+      <IconStyle>
+        <scale>0.9</scale>
+        <Icon>
+          <href>https://montagestudio.github.io/hmmx/assets/geo/prison-icons/UK-Prison-Category-B.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="31" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>    
     <StyleMap id="icon-503-DB4436">
       <Pair>
         <key>normal</key>
@@ -61,14 +73,14 @@
         <styleUrl>#icon-high-security</styleUrl>
       </Pair>
     </StyleMap>
-    <StyleMap id="category-A">
+    <StyleMap id="category-B">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-high-security</styleUrl>
+        <styleUrl>#icon-category-B</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-high-security</styleUrl>
+        <styleUrl>#icon-category-B</styleUrl>
       </Pair>
     </StyleMap>
     <StyleMap id="category-B">
