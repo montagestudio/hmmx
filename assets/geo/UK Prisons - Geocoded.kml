@@ -6,7 +6,7 @@
     <Style id="icon-503-DB4436-normal">
       <IconStyle>
         <color>ff3644db</color>
-        <scale>1.1</scale>
+        <scale>0.2</scale>
         <Icon>
           <href>https://montagestudio.github.io/hmmx/assets/geo/DefaultUKGovPin.png</href>
         </Icon>
@@ -19,7 +19,7 @@
     <Style id="icon-high-security">
       <IconStyle>
         <color>ff3644db</color>
-        <scale>1.1</scale>
+        <scale>0.2</scale>
         <Icon>
           <href>https://montagestudio.github.io/hmmx/assets/geo/prison-icons/HighSecurity.png</href>
         </Icon>
@@ -32,7 +32,7 @@
     <Style id="icon-503-DB4436-highlight">
       <IconStyle>
         <color>ff3644db</color>
-        <scale>1.1</scale>
+        <scale>0.2</scale>
         <Icon>
           <href>https://montagestudio.github.io/hmmx/assets/geo/DefaultUKGovPinHighlight.png</href>
         </Icon>
@@ -51,8 +51,14 @@
         <key>highlight</key>
         <styleUrl>#icon-503-DB4436-highlight</styleUrl>
       </Pair>
+    </StyleMap>
+    <StyleMap id="high-security">
       <Pair>
-        <key>high-security</key>
+        <key>normal</key>
+        <styleUrl>#icon-high-security</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
         <styleUrl>#icon-high-security</styleUrl>
       </Pair>
     </StyleMap>
