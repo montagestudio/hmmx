@@ -248,7 +248,7 @@
       <Placemark>
         <name>Brixton</name>
         <description><![CDATA[P O Box 369<br>London SW2 5XF<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=284,15,2,15,284,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-B</styleUrl>
         <Point>
           <coordinates>
             -0.120814,51.45293,0
@@ -968,7 +968,7 @@
       <Placemark>
         <name>Lowdham Grange</name>
         <description><![CDATA[Lowdham<br>Lowdham NG14 7DA<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=606,15,2,15,606,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-B</styleUrl>
         <Point>
           <coordinates>
             -1.032054,53.0149,0
@@ -1118,7 +1118,7 @@
       <Placemark>
         <name>Peterborough</name>
         <description><![CDATA[Saville Road<br>Peterborough PE3 7PD<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=3167,15,2,15,3167,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-B</styleUrl>
         <Point>
           <coordinates>
             -0.264729,52.584455,0
