@@ -19,7 +19,7 @@
     <Style id="icon-503-DB4436-highlight">
       <IconStyle>
         <color>50B46E14</color>
-        <scale></scale>
+        <scale>0.07</scale>
         <Icon>
           <href>https://montagestudio.github.io/hmmx/assets/geo/DefaultUKGovPinHighlight.png</href>
         </Icon>
@@ -83,7 +83,7 @@
         <styleUrl>#icon-category-B</styleUrl>
       </Pair>
     </StyleMap>
-    <StyleMap id="category-B">
+    <StyleMap id="category-C">
       <Pair>
         <key>normal</key>
         <styleUrl>#icon-high-security</styleUrl>
