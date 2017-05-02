@@ -5,8 +5,8 @@
     <description/>
     <Style id="icon-503-DB4436-normal">
       <IconStyle>
-        <color>ff3644db</color>
-        <scale>0.2</scale>
+        <color>50F0BE14</color>
+        <scale>0.07</scale>
         <Icon>
           <href>https://montagestudio.github.io/hmmx/assets/geo/DefaultUKGovPin.png</href>
         </Icon>
@@ -16,10 +16,22 @@
         <scale>0</scale>
       </LabelStyle>
     </Style>
+    <Style id="icon-503-DB4436-highlight">
+      <IconStyle>
+        <color>50B46E14</color>
+        <scale></scale>
+        <Icon>
+          <href>https://montagestudio.github.io/hmmx/assets/geo/DefaultUKGovPinHighlight.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="31" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0.07</scale>
+      </LabelStyle>
+    </Style>
     <Style id="icon-high-security">
       <IconStyle>
-        <color>ff3644db</color>
-        <scale>0.2</scale>
+        <scale>0.9</scale>
         <Icon>
           <href>https://montagestudio.github.io/hmmx/assets/geo/prison-icons/HighSecurity.png</href>
         </Icon>
@@ -29,19 +41,6 @@
         <scale>0</scale>
       </LabelStyle>
     </Style>    
-    <Style id="icon-503-DB4436-highlight">
-      <IconStyle>
-        <color>ff3644db</color>
-        <scale>0.2</scale>
-        <Icon>
-          <href>https://montagestudio.github.io/hmmx/assets/geo/DefaultUKGovPinHighlight.png</href>
-        </Icon>
-        <hotSpot x="16" xunits="pixels" y="31" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1.1</scale>
-      </LabelStyle>
-    </Style>
     <StyleMap id="icon-503-DB4436">
       <Pair>
         <key>normal</key>
@@ -53,6 +52,36 @@
       </Pair>
     </StyleMap>
     <StyleMap id="high-security">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-high-security</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-high-security</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="category-A">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-high-security</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-high-security</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="category-B">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-high-security</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-high-security</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="category-C">
       <Pair>
         <key>normal</key>
         <styleUrl>#icon-high-security</styleUrl>
@@ -547,7 +576,7 @@
       <Placemark>
         <name>Frankland</name>
         <description><![CDATA[Brasside<br>Durham DH1 5YD<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=396,15,2,15,396,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#high-security</styleUrl>
         <Point>
           <coordinates>
             -1.58179,54.79343,0
@@ -557,7 +586,7 @@
       <Placemark>
         <name>Full Sutton</name>
         <description><![CDATA[Full Sutton<br>York YO41 1PS<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=380,15,2,15,380,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#high-security</styleUrl>
         <Point>
           <coordinates>
             -0.879349,53.99992,0
@@ -907,7 +936,7 @@
       <Placemark>
         <name>Long Lartin</name>
         <description><![CDATA[South Littleton<br>Evesham WR11 8TZ<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=297,15,2,15,297,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#high-security</styleUrl>
         <Point>
           <coordinates>
             -1.85498,52.109619,0
@@ -947,7 +976,7 @@
       <Placemark>
         <name>Manchester</name>
         <description><![CDATA[Southall Street<br>Manchester M60 9AH<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=618,15,2,15,618,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#high-security</styleUrl>
         <Point>
           <coordinates>
             -2.248537,53.4814,0
@@ -1337,7 +1366,7 @@
       <Placemark>
         <name>Wakefield</name>
         <description><![CDATA[5 Love Lane<br>Wakefield WF2 9AG<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=477,15,2,15,477,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#high-security</styleUrl>
         <Point>
           <coordinates>
             -1.508383,53.68328,0
@@ -1427,10 +1456,10 @@
       <Placemark>
         <name>Whitemoor</name>
         <description><![CDATA[Longhill Road<br>March PE15 0PR<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=423,15,2,15,423,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#high-security</styleUrl>
         <Point>
           <coordinates>
-            0.083328,52.573472,0
+            0.13328,52.573472,0
           </coordinates>
         </Point>
       </Placemark>
@@ -1457,7 +1486,7 @@
       <Placemark>
         <name>Woodhill</name>
         <description><![CDATA[Tattenhoe Street<br>Milton Keynes MK4 4DA<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=407,15,2,15,407,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#high-security</styleUrl>
         <Point>
           <coordinates>
             -0.795214,52.008255,0
