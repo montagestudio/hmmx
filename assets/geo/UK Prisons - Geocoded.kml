@@ -53,6 +53,30 @@
         <scale>0</scale>
       </LabelStyle>
     </Style>    
+    <Style id="icon-category-C">
+      <IconStyle>
+        <scale>0.9</scale>
+        <Icon>
+          <href>https://montagestudio.github.io/hmmx/assets/geo/prison-icons/UK-Prison-Category-C.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="31" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>    
+    <Style id="icon-category-D">
+      <IconStyle>
+        <scale>0.9</scale>
+        <Icon>
+          <href>https://montagestudio.github.io/hmmx/assets/geo/prison-icons/UK-Prison-Category-D.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="31" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>    
     <StyleMap id="icon-503-DB4436">
       <Pair>
         <key>normal</key>
@@ -86,21 +110,21 @@
     <StyleMap id="category-C">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-high-security</styleUrl>
+        <styleUrl>#icon-category-C</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-high-security</styleUrl>
+        <styleUrl>#icon-category-C</styleUrl>
       </Pair>
-    </StyleMap>
-    <StyleMap id="category-C">
+    </StyleMap>    
+    <StyleMap id="category-D">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-high-security</styleUrl>
+        <styleUrl>#icon-category-D</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-high-security</styleUrl>
+        <styleUrl>#icon-category-D</styleUrl>
       </Pair>
     </StyleMap>
     <Folder>
@@ -138,7 +162,7 @@
       <Placemark>
         <name>Ashfield</name>
         <description><![CDATA[Shortwood Road<br>Bristol BS16 9QJ<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=232,15,2,15,232,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -2.452146,51.480881,0
@@ -268,7 +292,7 @@
       <Placemark>
         <name>Buckley Hall</name>
         <description><![CDATA[Buckley Road<br>Rochdale OL12 9DP<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=238,15,2,15,238,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -2.145139,53.628365,0
@@ -338,7 +362,7 @@
       <Placemark>
         <name>Channings Wood</name>
         <description><![CDATA[Denbury<br>Newton Abbott TQ12 6DW<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=318,15,2,15,318,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -3.659479,50.50564,0
@@ -358,7 +382,7 @@
       <Placemark>
         <name>Coldingley</name>
         <description><![CDATA[Bisley<br>Woking GU24 9EX<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=257,15,2,15,257,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -0.64216,51.32299,0
@@ -378,7 +402,7 @@
       <Placemark>
         <name>Dartmoor</name>
         <description><![CDATA[Princetown<br>Princetown PL20 6RR<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=322,15,2,15,322,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -4.04942,50.508298,0
@@ -438,7 +462,7 @@
       <Placemark>
         <name>Downview</name>
         <description><![CDATA[Sutton Lane<br>Sutton SM2 5PD<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=340,15,2,15,340,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -0.19464,51.336776,0
@@ -448,7 +472,7 @@
       <Placemark>
         <name>Drake Hall</name>
         <description><![CDATA[Eccleshall<br>StokeonTrent ST21 6LQ<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=245,15,2,15,245,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -2.24082,52.878849,0
@@ -508,7 +532,7 @@
       <Placemark>
         <name>Erlestoke</name>
         <description><![CDATA[Devizes<br>Devizes SN10 5TU<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=376,15,2,15,376,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -2.002859,51.32561,0
@@ -538,7 +562,7 @@
       <Placemark>
         <name>Featherstone</name>
         <description><![CDATA[New Road<br>Wolverhampton WV10 7PU<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=218,15,2,15,218,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -2.089284,52.64747,0
@@ -558,7 +582,7 @@
       <Placemark>
         <name>Ford</name>
         <description><![CDATA[Arundel<br>Arundel BN18 0BX<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=368,15,2,15,368,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-D</styleUrl>
         <Point>
           <coordinates>
             -0.618999,50.84384,0
@@ -658,7 +682,7 @@
       <Placemark>
         <name>Guys Marsh</name>
         <description><![CDATA[Shaftesbury<br>Shaftesbury SP7 0AH<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=361,15,2,15,361,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -2.189929,50.97924,0
@@ -678,7 +702,7 @@
       <Placemark>
         <name>Haverigg</name>
         <description><![CDATA[Millom<br>Millom LA18 4NA<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=420,15,2,15,420,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -3.283839,54.2018,0
@@ -728,7 +752,7 @@
       <Placemark>
         <name>Highpoint</name>
         <description><![CDATA[Stradishall<br>Newmarket CB8 9YG<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=431,15,2,15,431,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             0.50883,52.138771,0
@@ -818,7 +842,7 @@
       <Placemark>
         <name>Kirkham</name>
         <description><![CDATA[Freckleton Road<br>Preston PR4 2RN<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=468,15,2,15,468,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-D</styleUrl>
         <Point>
           <coordinates>
             -2.871105,53.781934,0
@@ -848,7 +872,7 @@
       <Placemark>
         <name>Lancaster Farms</name>
         <description><![CDATA[Far Moor Lane<br>Lancaster LA1 3QZ<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=3092,15,2,15,3092,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -2.793729,54.04838,0
@@ -928,7 +952,7 @@
       <Placemark>
         <name>Littlehey</name>
         <description><![CDATA[Perry<br>Huntingdon PE28 0SR<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=301,15,2,15,301,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -0.31385,52.281101,0
@@ -958,7 +982,7 @@
       <Placemark>
         <name>Low Newton</name>
         <description><![CDATA[Brasside<br>Durham DH1 5YA<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=291,15,2,15,291,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -1.54973,54.80687,0
@@ -978,7 +1002,7 @@
       <Placemark>
         <name>Maidstone</name>
         <description><![CDATA[36 County Road<br>Maidstone ME14 1UZ<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=614,15,2,15,614,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             0.525414,51.278599,0
@@ -998,7 +1022,7 @@
       <Placemark>
         <name>Moorland Closed</name>
         <description><![CDATA[Bawtry Road<br>HatfieldWoodhouse DN7 6BW<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=286,15,2,15,286,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -0.981546,53.565823,0
@@ -1028,7 +1052,7 @@
       <Placemark>
         <name>New Hall</name>
         <description><![CDATA[Dial Wood<br>Flockton WF4 4XX<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=1009,15,2,15,1009,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -1.635486,53.630837,0
@@ -1038,7 +1062,7 @@
       <Placemark>
         <name>North Sea Camp</name>
         <description><![CDATA[Freiston<br>Boston PE22 0QX<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=1011,15,2,15,1011,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-D</styleUrl>
         <Point>
           <coordinates>
             -0.015406,52.980136,0
@@ -1078,7 +1102,7 @@
       <Placemark>
         <name>Onley</name>
         <description><![CDATA[Willoughby<br>Rugby CV23 8AP<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=351,15,2,15,351,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -1.24769,52.326431,0
@@ -1158,7 +1182,7 @@
       <Placemark>
         <name>Ranby</name>
         <description><![CDATA[Retford<br>Retford DN22 8EU<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=1043,15,2,15,1043,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -1.026609,53.32302,0
@@ -1178,7 +1202,7 @@
       <Placemark>
         <name>Risley</name>
         <description><![CDATA[Risley<br>Warrington WA3 6BP<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=333,15,2,15,333,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -2.52407,53.438099,0
@@ -1208,7 +1232,7 @@
       <Placemark>
         <name>Send</name>
         <description><![CDATA[Ripley Road<br>Send GU23 7LJ<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=617,15,2,15,617,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -0.528849,51.28993,0
@@ -1238,7 +1262,7 @@
       <Placemark>
         <name>Spring Hill</name>
         <description><![CDATA[Grendon Underwood<br>Aylesbury HP18 0TL<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=580,15,2,15,580,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-D</styleUrl>
         <Point>
           <coordinates>
             -1.0073,51.893089,0
@@ -1248,7 +1272,7 @@
       <Placemark>
         <name>Stafford</name>
         <description><![CDATA[54 Gaol Road<br>Stafford ST16 3AW<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=571,15,2,15,571,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -2.118607,52.811754,0
@@ -1268,7 +1292,7 @@
       <Placemark>
         <name>Stocken</name>
         <description><![CDATA[Stocken Hall Road<br>Stretton LE15 7RD<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=545,15,2,15,545,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -0.599194,52.733325,0
@@ -1278,7 +1302,7 @@
       <Placemark>
         <name>Stoke Heath</name>
         <description><![CDATA[Stoke Heath<br>Market Drayton TF9 2JL<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=523,15,2,15,523,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -2.523538,52.884231,0
@@ -1288,7 +1312,7 @@
       <Placemark>
         <name>Styal</name>
         <description><![CDATA[Styal<br>Wilmslow SK9 4HR<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=519,15,2,15,519,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -2.23813,53.341122,0
@@ -1298,7 +1322,7 @@
       <Placemark>
         <name>Sudbury</name>
         <description><![CDATA[Ashbourne<br>Ashbourne DE6 5HW<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=513,15,2,15,513,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-D</styleUrl>
         <Point>
           <coordinates>
             -1.754059,52.8941,0
@@ -1338,7 +1362,7 @@
       <Placemark>
         <name>The Mount</name>
         <description><![CDATA[Molyneaux Avenue<br>Bovingdon HP3 0NZ<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=490,15,2,15,490,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -0.533389,51.7237,0
@@ -1368,7 +1392,7 @@
       <Placemark>
         <name>Usk</name>
         <description><![CDATA[47 Maryport Street<br>Usk NP15 1XP<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=483,15,2,15,483,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -2.902188,51.700901,0
@@ -1408,7 +1432,7 @@
       <Placemark>
         <name>Wayland</name>
         <description><![CDATA[Griston<br>Thetford IP25 6RL<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=469,15,2,15,469,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             0.86158,52.553349,0
@@ -1418,7 +1442,7 @@
       <Placemark>
         <name>Wealstun</name>
         <description><![CDATA[Wetherby<br>Wetherby LS23 7AZ<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=453,15,2,15,453,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -1.324389,53.91709,0
@@ -1458,7 +1482,7 @@
       <Placemark>
         <name>Whatton</name>
         <description><![CDATA[14 Cromwell Road<br>Whatton NG13 9FQ<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=434,15,2,15,434,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -0.911563,52.946341,0
@@ -1518,7 +1542,7 @@
       <Placemark>
         <name>Wymott</name>
         <description><![CDATA[Ulnes Walton Lane<br>Leyland PR26 8LW<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=402,15,2,15,402,0]]></description>
-        <styleUrl>#icon-503-DB4436</styleUrl>
+        <styleUrl>#category-C</styleUrl>
         <Point>
           <coordinates>
             -2.738191,53.679342,0
