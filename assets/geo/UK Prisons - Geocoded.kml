@@ -6,9 +6,9 @@
     <Style id="icon-503-DB4436-normal">
       <IconStyle>
         <color>ff3644db</color>
-        <scale>0.2</scale>
+        <scale>1.1</scale>
         <Icon>
-          <href>https://montagestudio.github.io/hmmx/assets/geo/DefaultUKGovPin.svg</href>
+          <href>https://montagestudio.github.io/hmmx/assets/geo/DefaultUKGovPin.png</href>
         </Icon>
         <hotSpot x="16" xunits="pixels" y="31" yunits="insetPixels"/>
       </IconStyle>
@@ -21,7 +21,7 @@
         <color>ff3644db</color>
         <scale>1.1</scale>
         <Icon>
-          <href>https://montagestudio.github.io/hmmx/assets/geo/prison-icons/HighSecurity.svg</href>
+          <href>https://montagestudio.github.io/hmmx/assets/geo/prison-icons/HighSecurity.png</href>
         </Icon>
         <hotSpot x="16" xunits="pixels" y="31" yunits="insetPixels"/>
       </IconStyle>
@@ -34,7 +34,7 @@
         <color>ff3644db</color>
         <scale>1.1</scale>
         <Icon>
-          <href>https://montagestudio.github.io/hmmx/assets/geo/DefaultUKGovPinHighlight.svg</href>
+          <href>https://montagestudio.github.io/hmmx/assets/geo/DefaultUKGovPinHighlight.png</href>
         </Icon>
         <hotSpot x="16" xunits="pixels" y="31" yunits="insetPixels"/>
       </IconStyle>
@@ -50,6 +50,10 @@
       <Pair>
         <key>highlight</key>
         <styleUrl>#icon-503-DB4436-highlight</styleUrl>
+      </Pair>
+      <Pair>
+        <key>high-security</key>
+        <styleUrl>#icon-high-security</styleUrl>
       </Pair>
     </StyleMap>
     <Folder>
@@ -137,7 +141,7 @@
       <Placemark>
         <name>Belmarsh</name>
         <description><![CDATA[Western Way<br>Thamesmead SE28 0EB<br>http://www.hmprisonservice.gov.uk/prisoninformation/locateaprison/prison.asp?id=254,15,2,15,254,0]]></description>
-        <styleUrl>#icon-high-security</styleUrl>
+        <styleUrl>#high-security</styleUrl>
         <Point>
           <coordinates>
             0.104951,51.496019,0
