@@ -35,8 +35,19 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, small, strike, strong, sub, sup, tt,
     font-weight: normal;
 }
 
+.text {
+    max-width: 30em;
+}
+
 .bold-small {
     font-weight: 700;
+}
+.bold-medium {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 1.2;
 }
 
 .button:active {
